@@ -23,3 +23,23 @@ Q9. http://stackoverflow.com/questions/26305/how-can-i-play-sound-in-java
 Q10. http://stackoverflow.com/questions/14617/how-to-retrieve-a-file-from-a-server-via-sftp
 
 ## Snippets
+
+[Q1. How to add an image to a JPanel?](LICENSE)
+
+Q2. How to generate a random alpha-numeric string?
+
+Q3. Saving Android Activity state
+
+Q4. How do I invoke a Java method when given the method name as a string?
+
+Q5. Remove HTML tags from a String
+
+Q6. How to get the path of a running JAR file?
+
+Q7. Getting a File's MD5 Checksum in Java
+
+Q8. Loading a properties file from Java package
+
+Q9. How can I play sound in Java?
+
+Q10. How to retrieve a file from a server via SFTP?
