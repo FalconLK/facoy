@@ -30,7 +30,7 @@ Q10. http://stackoverflow.com/questions/14617/how-to-retrieve-a-file-from-a-serv
 
 [Q3. Saving Android Activity state](/evaluation/onlinequery/snippets/Q03_Saving_Android_Activity_state)
 
-[Q4. How do I invoke a Java method when given the method name as a string?](/evaluation/onlinequery/snippets/Q04_How_do_I_invoke_a_Java_method_when given_the_method_name_as_a_string)
+[Q4. How do I invoke a Java method when given the method name as a string?](/evaluation/onlinequery/snippets/Q04_How_do_I_invoke_a_Java_method_when_given_the_method_name_as_a_string)
 
 [Q5. Remove HTML tags from a String](/evaluation/onlinequery/snippets/Q05_Remove_HTML_tags_from_a_String)
 
