@@ -24,22 +24,22 @@ Q10. http://stackoverflow.com/questions/14617/how-to-retrieve-a-file-from-a-serv
 
 ## Snippets
 
-[Q1. How to add an image to a JPanel?](/LICENSE)
+[Q1. How to add an image to a JPanel?](/evaluation/onlinequery/snippets/Q01_How_to_add_an_image_to_a_JPanel?)
 
-[Q2. How to generate a random alpha-numeric string?](/evaluation/onlinequery/snippets/README.md)
+[Q2. How to generate a random alpha-numeric string?](/evaluation/onlinequery/snippets/Q02_How_to_generate_a_random_alpha-numeric_string?)
 
 [Q3. Saving Android Activity state](/evaluation/onlinequery/snippets/Q03_Saving_Android_Activity_state)
 
-[Q4. How do I invoke a Java method when given the method name as a string?](./snippets/Q04_How do I invoke a Java method when given the method name as a string?)
+[Q4. How do I invoke a Java method when given the method name as a string?](./snippets/Q04_How_do_I_invoke_a_Java_method_when given_the_method_name_as_a_string?)
 
-[Q5. Remove HTML tags from a String](./snippets/Q05_Remove HTML tags from a String)
+[Q5. Remove HTML tags from a String](/evaluation/onlinequery/snippets/Q05_Remove_HTML_tags_from_a_String)
 
-[Q6. How to get the path of a running JAR file?](./snippets/Q06_How to get the path of a running JAR file?)
+[Q6. How to get the path of a running JAR file?](/evaluation/onlinequery/snippets/Q06_How_to_get_the_path_of_a_running_JAR_file?)
 
-[Q7. Getting a File's MD5 Checksum in Java](./snippets/Q07_Getting a File's MD5 Checksum in Java)
+[Q7. Getting a File's MD5 Checksum in Java](/evaluation/onlinequery/snippets/Q07_Getting_a_File's_MD5_Checksum_in_Java)
 
-[Q8. Loading a properties file from Java package](./snippets/Q08_Loading a properties file from Java package)
+[Q8. Loading a properties file from Java package](/evaluation/onlinequery/snippets/Q08_Loading_a_properties_file_from_Java_package)
 
-[Q9. How can I play sound in Java?](./snippets/Q09_How can I play sound in Java?)
+[Q9. How can I play sound in Java?](/evaluation/onlinequery/snippets/Q09_How_can_I_play_sound_in_Java?)
 
-[Q10. How to retrieve a file from a server via SFTP?](./snippets/Q10_How to retrieve a file from a server via SFTP?)
+[Q10. How to retrieve a file from a server via SFTP?](/evaluation/onlinequery/snippets/Q10_How_to_retrieve_a_file_from_a_server_via_SFTP?)
