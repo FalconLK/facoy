@@ -26,7 +26,7 @@ Q10. http://stackoverflow.com/questions/14617/how-to-retrieve-a-file-from-a-serv
 
 [Q1. How to add an image to a JPanel?](/LICENSE)
 
-[Q2. How to generate a random alpha-numeric string?](facoy/evaluation/onlinequery/snippets/Q02_How to generate a random alpha-numeric string?)
+[Q2. How to generate a random alpha-numeric string?](/master/evaluation/onlinequery/snippets/Q02_How to generate a random alpha-numeric string?)
 
 [Q3. Saving Android Activity state](../snippets/Q03_Saving Android Activity state)
 
