@@ -28,7 +28,7 @@ Q10. http://stackoverflow.com/questions/14617/how-to-retrieve-a-file-from-a-serv
 
 [Q2. How to generate a random alpha-numeric string?](/evaluation/onlinequery/snippets/Q02_How to generate a random alpha-numeric string?)
 
-[Q3. Saving Android Activity state](./snippets/Q03_Saving Android Activity state)
+[Q3. Saving Android Activity state](../snippets/Q03_Saving Android Activity state)
 
 [Q4. How do I invoke a Java method when given the method name as a string?](./snippets/Q04_How do I invoke a Java method when given the method name as a string?)
 
