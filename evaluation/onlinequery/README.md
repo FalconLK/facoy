@@ -24,7 +24,7 @@ Q10. http://stackoverflow.com/questions/14617/how-to-retrieve-a-file-from-a-serv
 
 ## Snippets
 
-[Q1. How to add an image to a JPanel?](./snippets/Q01_How to add an image to a JPanel?)
+[Q1. How to add an image to a JPanel?](LICENSE)
 
 [Q2. How to generate a random alpha-numeric string?](./snippets/Q02_How to generate a random alpha-numeric string?)
 
