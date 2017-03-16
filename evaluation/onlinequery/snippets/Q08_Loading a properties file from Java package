@@ -1,0 +1,4 @@
+Properties prop = new Properties();
+InputStream in = getClass().getResourceAsStream("foo.properties");
+prop.load(in);
+in.close();
