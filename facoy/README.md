@@ -31,6 +31,7 @@ When you can see the message "* Running on http://0.0.0.0:5000/ (Press Ctrl+C to
 
 (list of token types on the indexing)
 
-| Type  | Description |
+|   Type  | Description |
 | ---:  | :---        |
-|hi|hi|
+| used_class|Name of a used class|
+
