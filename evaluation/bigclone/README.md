@@ -11,10 +11,10 @@ We set up the credential, “user” as the username and “1234” as the passw
 3. Type the password "1234" to login as the "user" account.
 4. Open a terminal & activate the search engine by typing below.
 
-'''
+```
 cd /home/user/Desktop/FACoY/GitSearch
 jython bootstrap.py ./FrontEnd/server_IJaData.py
-'''
+```
 
 When you can see the message "* Running on http://0.0.0.0:5000/ (Press Ctrl+C to quit)", it is ready.
 
