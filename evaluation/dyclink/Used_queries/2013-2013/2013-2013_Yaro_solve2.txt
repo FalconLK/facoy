@@ -1,0 +1,48 @@
+static void solve2(int test) {
+		gtest = test;
+		ans = 0;
+		long B = nextLong();
+		int n = nextInt();
+		long[] left = new long[C];
+		for (int i = 0; i < n; i++) {
+			left[i] = nextLong();
+		}
+		Arrays.sort(left);
+		for (int c = 1; c < C; c++) {
+			long[] a = left.clone();
+			long tmpB = B;
+			for (int i = 0; i < c; i++) {
+				tmpB -= a[c - 1] - a[i];
+				a[i] = a[c - 1];
+			}
+			for (int i = c; i < C; i++) {
+				if (a[i] == a[0]) {
+					a[i]++;
+					tmpB--;
+				}
+			}
+			if (tmpB < 0)
+				continue;
+			relaxProfit(left, a);
+			while (true) {
+				int cntX = c;
+				int cntX1 = 0;
+				for (int i = c; i < C; i++) {
+					if (a[i] == a[0] + 1) {
+						cntX1++;
+					}
+				}
+				if (tmpB < cntX + cntX1 || cntX + cntX1 == C)
+					break;
+				long maxAdd = tmpB / (cntX + cntX1);
+				long canAdd = a[cntX + cntX1] - (a[0] + 1);
+				long add = min(maxAdd, canAdd);
+				for (int i = 0; i < cntX + cntX1; i++) {
+					a[i] += add;
+					tmpB -= add;
+				}
+				relaxProfit(left, a);
+			}
+		}
+		writer.printf("Case #%d: %.9f\n", test, ans);
+	}

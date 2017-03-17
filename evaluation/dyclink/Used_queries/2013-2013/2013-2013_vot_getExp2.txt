@@ -1,0 +1,24 @@
+private double getExp2(int count, int count2, long val) {
+		for (int i = 0; i < count; ++i) {
+			if (x[i] > val - 1) {
+				return 0;
+			}
+		}
+		long bet = 0;
+		for (int i = 0; i < count; ++i) {
+			bet += val - 1 - x[i];
+		}
+		long o = 0;
+		for (int i = 0; i < count2; ++i) {
+			o += val - x[count + i];
+		}
+		for (int i = count + count2; i < x.length; ++i) {
+			if (x[i] < val) {
+				return 0;
+			}
+		}
+		if (bet + o > b) {
+			return 0;
+		}
+		return (double) bet * 36 / count - bet - o;
+	}

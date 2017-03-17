@@ -1,0 +1,26 @@
+static double calcOurWinning(long budget, long[] x, int winningThings,
+			long lowestBet) {
+		long payMoney = 0;
+		for (int i = 0; i < winningThings; i++) {
+			if (x[i] > lowestBet) {
+				return -1;
+			}
+			payMoney += -x[i] + lowestBet;
+		}
+		for (int i = winningThings; i < x.length; i++) {
+			if (x[i] <= lowestBet) {
+				payMoney += lowestBet + 1 - x[i];
+			}
+		}
+
+		if (payMoney > budget) {
+			return -1;
+		}
+
+		long ourWin = 0;
+		for (int i = 0; i < winningThings; i++) {
+			ourWin += lowestBet - x[i];
+		}
+
+		return (double) ourWin / (double) winningThings * 36.0 - payMoney;
+	}

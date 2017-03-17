@@ -1,0 +1,12 @@
+public void run() {
+        try {
+            in = new FastScanner(new File("A-large.in"));
+            out = new PrintWriter(new File("A-large.out"));
+
+            solve();
+
+            out.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
