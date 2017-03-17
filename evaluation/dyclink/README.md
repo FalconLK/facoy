@@ -15,5 +15,5 @@ Since most codes in Google Code Jam often use variables with no meaning (such as
 
 ***FaCoY can indeed find semantic clones that exhibit similar runtime behavior.**
 
-##Results sharing
-The name mapping is available [here](https://drive.google.com/open?id=0B2btZBiPsouGNmx6Y2xCVXUwbUk) and the result file is available [here](https://drive.google.com/open?id=0B2btZBiPsouGT2o3eVU2c2txdmM).
+***Results sharing
+The name mapping information is available [here](https://drive.google.com/open?id=0B2btZBiPsouGNmx6Y2xCVXUwbUk) and the result can be checked in [here](https://drive.google.com/open?id=0B2btZBiPsouGT2o3eVU2c2txdmM).
