@@ -32,6 +32,13 @@ When you can see the message "* Running on http://0.0.0.0:5000/ (Press Ctrl+C to
 (list of token types on the indexing)
 
 |   Type  | Description |
-| ---:  | :---        |
+|   ---:  | :---        |
 | used_class|Name of a used class|
+| class_instance_creation|Class instance creation|
+| extends|Super class or interface|
+| method_declaration|Name of method declared|
+| import|Name package or class imported|
+| typed_method_call|(Partially) qualified name of called method
+| unresolved_method_call|Non-qualified name of called method
+| str_literal|String literal used in code
 
