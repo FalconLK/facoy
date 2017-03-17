@@ -1,0 +1,16 @@
+private double func(double[] xs,double[] ys,double right){
+		int n=xs.length;
+		double res=0;
+		for(int i=0;i<n-1;i++) {
+			if(right<xs[i])continue;
+			if(right<xs[i+1]) {
+				double a = (ys[i+1]-ys[i])/(xs[i+1]-xs[i]);
+				double b = ys[i] - a*xs[i];
+				double y = a*right + b;
+				res += (ys[i]+y)*(right-xs[i])/2;
+			}else {
+				res += (ys[i]+ys[i+1])*(xs[i+1]-xs[i])/2;
+			}
+		}
+		return res;
+	}

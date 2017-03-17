@@ -1,0 +1,18 @@
+double getX(double sq, Seg A, Seg B, double xf) {
+		double EPS = 1e-9;
+		double up = B.x;
+		double down = xf;
+		double S = 0;
+		double alpha = (B.dif - A.dif) / (double)(B.x - A.x);
+		double b = A.dif;
+		while (Math.abs(up - down) > EPS) {
+			double mid = (up + down) / 2.;
+			S = (mid - xf) * (alpha * (mid + xf - 2 * A.x) + 2 * b) / 2.;
+			if (S < sq) {
+				down = mid;
+			} else {
+				up = mid;
+			}
+		}
+		return (up + down) / 2.;		
+	}

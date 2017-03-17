@@ -1,0 +1,12 @@
+public void run() {
+		try {
+			sc = new FastScanner("a.in");
+			out = new PrintWriter("a.out");
+			solve();
+			sc.close();
+			out.close();
+		} catch (Throwable e) {
+			e.printStackTrace();
+			System.exit(1);
+		}
+	}

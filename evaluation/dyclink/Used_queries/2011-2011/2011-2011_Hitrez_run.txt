@@ -1,0 +1,7 @@
+ void run() throws IOException
+   {
+      in = new StreamTokenizer(new BufferedReader(new FileReader("A-large.in")));
+      out = new PrintWriter(new FileWriter("A-large.out"));
+      solve();
+      out.flush();
+   }

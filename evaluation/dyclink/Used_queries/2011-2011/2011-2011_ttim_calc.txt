@@ -1,0 +1,30 @@
+private double calc(double fromX, double toX, int[] lx, int[] ly, int[] ux, int[] uy) {
+        double cx = fromX;
+
+        double s = 0;
+
+        while (cx < toX) {
+            // find next x
+            double nx = toX;
+
+            for (int i = 0; i < lx.length; i++) {
+                if (lx[i] > cx) {
+                    nx = Math.min(nx, lx[i]);
+                    break;
+                }
+            }
+
+            for (int i = 0; i < ux.length; i++) {
+                if (ux[i] > cx) {
+                    nx = Math.min(nx, ux[i]);
+                    break;
+                }
+            }
+
+            s += trapS(cx, nx, yAtX(cx, lx, ly), yAtX(cx, ux, uy), yAtX(nx, lx, ly), yAtX(nx, ux, uy));
+
+            cx = nx;
+        }
+
+        return s;
+    }

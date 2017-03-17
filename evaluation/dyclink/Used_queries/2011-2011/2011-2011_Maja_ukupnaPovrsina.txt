@@ -1,0 +1,19 @@
+static double ukupnaPovrsina() {
+		double ret = 0;
+
+		for (int i = 0; i < l.length - 1; i++)
+			ret += l[i].x * l[i + 1].y;
+		ret += l[l.length - 1].x * u[u.length - 1].y;
+		for (int i = u.length - 1; i > 0; i--)
+			ret += u[i].x * u[i - 1].y;
+		ret += u[0].x * l[0].y;
+
+		for (int i = 0; i < l.length - 1; i++)
+			ret -= l[i].y * l[i + 1].x;
+		ret -= l[l.length - 1].y * u[u.length - 1].x;
+		for (int i = u.length - 1; i > 0; i--)
+			ret -= u[i].y * u[i - 1].x;
+		ret -= u[0].y * l[0].x;
+
+		return Math.abs(ret);
+	}

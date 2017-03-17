@@ -1,0 +1,26 @@
+double getArea(double x) {
+		return getArea(upper, x) - getArea(lower, x);
+	}
+	
+	final double LOWER_Y = -2000;
+
+	private double getArea(Point[] p, double x) {
+		double res = 0;
+		for (int i = 1; i < p.length; ++i) {
+			if (p[i].x > x) {
+				double lastY = p[i - 1].y, curY;
+				double dx = p[i].x - p[i - 1].x;
+				curY = lastY + (double)(p[i].y - p[i - 1].y) * (x - p[i - 1].x) / dx;
+				double midY = (lastY + curY) / 2.;
+				midY += LOWER_Y;
+				res += midY * (x - p[i - 1].x);
+				break;
+			} else {
+				double lastY = p[i - 1].y, curY = p[i].y;
+				double midY = (lastY + curY) / 2.;
+				midY += LOWER_Y;
+				res += midY * (p[i].x - p[i - 1].x);
+			}
+		}
+		return res;
+	}

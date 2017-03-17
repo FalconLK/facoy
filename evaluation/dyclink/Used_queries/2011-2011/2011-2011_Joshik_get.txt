@@ -1,0 +1,8 @@
+double get(int[] x, int[] y, double xx) {
+		int i = 1;
+		while (x[i] < xx) {
+			i++;
+		}
+		return 1.0 * (y[i] - y[i - 1]) * (xx - x[i - 1]) / (x[i] - x[i - 1])
+				+ y[i - 1];
+	}
