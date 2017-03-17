@@ -1,8 +1,10 @@
 # Validating with DyCLINK
 
-DyCLINK is a system for detecting methods having similar runtime behavior at instruction level. DyCLINK constructs dynamic instruction graphs based on execution traces for methods and then conducts inexact (sub)graph matching between each execution of each method. The methods having similar (sub)graphs are called "code relatives", because they have relevant runtime behavior. The information about how DyCLINK works can be found in a [FSE 2016 paper](http://dl.acm.org/citation.cfm?doid=2950290.2950321).
+We build on DyCLINK, a dynamic approach that computes similarity of execution traces to detect that two code fragments are relatives (i.e., that they behave (functionally) similarly). 
 
 DyCLINK has been applied to programs written for Google Code Jam competitions to identify code relatives at the granularity of methods. We carefully reproduced their results with the publicly available version of DyCLINK. Among the 642 methods in the code base, DyCLINK considers 411 pairs as code relatives.
+
+The information about how DyCLINK works can be found in a [FSE 2016 paper](http://dl.acm.org/citation.cfm?doid=2950290.2950321).
 
 ## Find semantic clones also detected by DyCLINK
 We consider all methods for which DyCLINK finds a relative and use FaCoY to search for its clones in the Google Code Jam dataset, and we check that the found clones are relatives of the input. 
