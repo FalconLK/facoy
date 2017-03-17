@@ -42,4 +42,6 @@ When you can see the message "* Running on http://0.0.0.0:5000/ (Press Ctrl+C to
 | unresolved_method_call |Non-qualified name of called method|
 | str_literal            |String literal used in code   |
 | comments               |Comments of the developers    |
+| line_number            |Line number of a specific code|
+| line_range             |Line range of a specific code snippet|
 
