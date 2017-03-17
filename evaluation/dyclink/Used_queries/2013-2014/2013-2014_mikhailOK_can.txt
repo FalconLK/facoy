@@ -1,0 +1,17 @@
+private boolean can(int[] a, long eat) {
+			int n = a.length;
+			int i = 0;
+			long s1 = 0;
+			while (i < n && s1 + a[i] <= eat) {
+				s1 += a[i++];
+			}
+			long s2 = 0;
+			while (i < n && s2 + a[i] <= eat) {
+				s2 += a[i++];
+			}
+			long s3 = 0;
+			while (i < n && s3 + a[i] <= eat) {
+				s3 += a[i++];
+			}
+			return i == n;
+		}
