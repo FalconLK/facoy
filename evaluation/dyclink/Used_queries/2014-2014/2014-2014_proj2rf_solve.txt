@@ -1,0 +1,50 @@
+void solve() throws IOException {
+		int n = nextInt();
+		int p = nextInt();
+		int q = nextInt();
+		int r = nextInt();
+		int s = nextInt();
+
+		int[] a = new int[n];
+		for (int i = 0; i < n; i++) {
+			a[i] = (int) (((long) i * p + q) % r + s);
+		}
+
+		long[] pref = new long[n + 1];
+		for (int i = 0; i < n; i++) {
+			pref[i + 1] = pref[i] + a[i];
+		}
+		
+//		System.err.println(Arrays.toString(pref));
+//		System.err.println(Arrays.toString(a));
+
+		long low = 0; // can't
+		long high = pref[n]; // can
+		
+//		low = 99;
+//		high = 101;
+		
+		
+		outer: while (low + 1 < high) {
+			long mid = (low + high) / 2;
+			int cur = 0;
+			for (int i = 0; i < 3; i++) {
+				long need = pref[cur] + mid;
+				int x = Arrays.binarySearch(pref, need);
+				if (x < 0) {
+					x = -x - 2;
+				}
+//				System.err.println(x);
+				if (x == n) {
+					high = mid;
+					continue outer;
+				}
+				cur = x;
+			}
+			low = mid;
+		}
+		
+//		System.err.println(high);
+		double ans = 1.0 * (pref[n] - high) / pref[n];
+		out.printf(Locale.US, "%.12f\n", ans);
+	}
