@@ -10,3 +10,6 @@ As a result, FaCoY can identify 278 out of 411 code relatives and the hit ratio 
 Since many most programs in Google Code Jam often use variables with no meaning (such as void s(int a){}), FaCoY cannot find related code in StackOverflow and thus cannot build alternate queries, limiting the hit ratio. On the other hand, since DyCLINK also uses a similarity metric to decide on code relativeness, the MRR score of FaCoY could be higher with a more relaxed threashold (currently set at 82%) in DyCLINK.
 
 ***FaCoY can indeed find semantic clones that exhibit similar runtime behavior.**
+
+##Results sharing
+The name mapping is available [here](https://drive.google.com/open?id=0B2btZBiPsouGNmx6Y2xCVXUwbUk) and the result file is available [here](https://drive.google.com/open?id=0B2btZBiPsouGT2o3eVU2c2txdmM).
