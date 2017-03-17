@@ -21,7 +21,7 @@ When you can see the message "* Running on http://0.0.0.0:5000/ (Press Ctrl+C to
 5. Open the firefox browser & let's go to http://0.0.0.0:5000
 6. Now the search engine may be showed up. You can put any source code snippet into the text box. If you want to use sample code snippets, you can find several samples in the path "/home/user/Desktop/FACoY/Sample Codes/IJa_samples". 
 
-***Each step might take some time since it is working on virtual machine.**
+***Each step might take some time since it is running on a virtual machine.**
 
 
 ## IJaDataset
