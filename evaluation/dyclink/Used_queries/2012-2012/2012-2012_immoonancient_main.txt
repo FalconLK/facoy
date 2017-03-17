@@ -1,0 +1,23 @@
+public static void main(String[] args) throws FileNotFoundException {
+		Scanner cin = new Scanner(new File("A.in.txt"));
+		PrintStream cout = new PrintStream("A.out.txt");
+		int caseN = cin.nextInt();
+		for (int caseI=1; caseI<=caseN; caseI++)
+		{
+			int n = cin.nextInt();
+			int[] l = new int[n];
+			int[] p = new int[n];
+			for (int i=0; i<n; i++)
+				l[i] = cin.nextInt();
+			for (int i=0; i<n; i++)
+				p[i] = cin.nextInt();
+			GameLevel[] levels = new GameLevel[n];
+			for (int i=0; i<n; i++)
+				levels[i] = new GameLevel(i, l[i], p[i]);
+			Arrays.sort(levels);
+			cout.print("Case #" + caseI + ":");
+			for (int i=0; i<n; i++)
+				cout.print(" " + levels[i].getId());
+			cout.println();
+		}
+	}

@@ -1,0 +1,16 @@
+@Override
+	public void run() {
+		in = new MyScanner();
+		try {
+			out = new PrintWriter(new File("A-large.out"));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		int tests = in.nextInt();
+		for (int i = 0; i < tests; ++i) {
+			out.print("Case #" + (i + 1) + ": ");
+			solve();
+		}
+		in.close();
+		out.close();
+	}

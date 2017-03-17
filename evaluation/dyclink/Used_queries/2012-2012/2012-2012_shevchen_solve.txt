@@ -1,0 +1,18 @@
+private void solve() {
+		int n = in.nextInt();
+		Level[] lev = new Level[n];
+		for (int i = 0; i < n; ++i) {
+			lev[i] = new Level(i, -1, -1);
+		}
+		for (int i = 0; i < n; ++i) {
+			lev[i].time = in.nextInt();
+		}
+		for (int i = 0; i < n; ++i) {
+			lev[i].prob = 100 - in.nextInt();
+		}
+		Arrays.sort(lev);
+		for (Level l : lev) {
+			out.print(l.id + " ");
+		}
+		out.println();
+	}
