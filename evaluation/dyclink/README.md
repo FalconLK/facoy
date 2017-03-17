@@ -13,6 +13,5 @@ The used Google Code Jam data is available [here](/evaluation/dyclink/GoogleCode
 
 Since most codes in Google Code Jam often use variables with no meaning (such as void s(int a){}), FaCoY cannot find related code in StackOverflow and thus cannot build alternate queries, limiting the hit ratio. On the other hand, since DyCLINK also uses a similarity metric to decide on code relativeness, the MRR score of FaCoY could be higher with a more relaxed threashold (currently set at 82%) in DyCLINK.
 
-***FaCoY can indeed find semantic clones that exhibit similar runtime behavior.**
-
-***The name mapping information is available [here](https://drive.google.com/open?id=0B2btZBiPsouGNmx6Y2xCVXUwbUk) and the result can be checked in [here](https://drive.google.com/open?id=0B2btZBiPsouGT2o3eVU2c2txdmM).***
+***FaCoY can indeed find semantic clones that exhibit similar runtime behavior. 
+The name mapping information is available [here](https://drive.google.com/open?id=0B2btZBiPsouGNmx6Y2xCVXUwbUk) and the result can be checked in [here](https://drive.google.com/open?id=0B2btZBiPsouGT2o3eVU2c2txdmM).**
