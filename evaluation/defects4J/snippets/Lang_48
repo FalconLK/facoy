@@ -1,0 +1,7 @@
+if (!lhsClass.isArray()) {
+    // The simple case, not an array, just test the element
+    isEquals = lhs.equals(rhs);
+} else if (lhs.getClass() != rhs.getClass()) {
+    // Here when we compare different dimensions, for example: a boolean[][] to a boolean[] 
+    this.setEquals(false);
+}
