@@ -1,0 +1,3 @@
+double valueDelta = dataset.getStdDevValue(row, column).doubleValue();
+double highVal = rangeAxis.valueToJava2D(meanValue.doubleValue() + valueDelta, dataArea, yAxisLocation);
+double lowVal = rangeAxis.valueToJava2D(meanValue.doubleValue() - valueDelta, dataArea, yAxisLocation);
