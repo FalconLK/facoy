@@ -19,10 +19,10 @@ Chart: 3/26
 ^: SVN revision number
 
 [Lang_11](/evaluation/defects4J/snippets/Lang_11) candidate was ranked 2nd
-80452c7a42777513c35fd30c4e12bcd7ee438fb9
+*80452c7a42777513c35fd30c4e12bcd7ee438fb9
 
 [Lang_14](/evaluation/defects4J/snippets/Lang_14) candidate was ranked 8th
-cf7211f9d7d70d56501d8c4c827bf9ce3cac5f0b
+*cf7211f9d7d70d56501d8c4c827bf9ce3cac5f0b
 
 [Lang_32](/evaluation/defects4J/snippets/Lang_32) candidate was ranked 1st
 006fca88e86bd6f650d4d021d2ff3573a572827d
