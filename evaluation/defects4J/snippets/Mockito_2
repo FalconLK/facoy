@@ -1,0 +1,15 @@
+public class Timer {
+    private final long durationMillis;
+    private long startTime = -1;
+
+    public Timer(long durationMillis) {
+        this.durationMillis = durationMillis;
+    }
+    public boolean isCounting() {
+        assert startTime != -1;
+        return System.currentTimeMillis() - startTime <= durationMillis;
+    }
+    public void start() {
+        startTime = System.currentTimeMillis();
+    }
+}
