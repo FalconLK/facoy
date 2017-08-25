@@ -1,4 +1,4 @@
-# Searching patch candidates using FaCoY with buggy codes as the input queries (RQ4).
+# Searching patch candidates using FaCoY with buggy codes from Defects4J (RQ4).
 
 We put 395 buggy codes from [Defects4J benchmark](https://github.com/rjust/defects4j).
 
