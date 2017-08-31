@@ -1,4 +1,4 @@
-![logo][https://github.com/facoy/facoy/tree/master/evaluation/bigclone/per-func-t1.pdf]
+![FaCoY logo][logo]
 
 # Running FaCoY on IJaDataset and evaluating on BigCloneBench (RQ2)
 
@@ -23,3 +23,7 @@ Therefore, we manually verify the clone pairs that are not associated in BigClon
 ***FaCoY performs better for functionalities requiring external APIs and libraries than those with pure computation tasks. In addition, our approach’s even can detect clones that BigCloneBench missed with a high probability.**
 
 False positive samples are listed and available [here](/evaluation/bigclone/false_positive_samples)
+
+
+
+[logo]: https://github.com/facoy/facoy/FaCoY_Logo.png
