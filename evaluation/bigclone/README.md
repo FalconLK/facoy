@@ -11,7 +11,7 @@ BigCloneBench is a benchmark for clone detection mined from the IJaDataset-2.0 (
 BigCloneBnech (IJADataset) has 43 functionalities while it has 8,345,104 clone pairs among the 22,285,855 clones. We also tried to separate the result for each of the function. It turns out, FaCoY shows high recall values for "Play Sound (F18)", "Take Screenshot to File (F19)", "XMPP Send Message (F21)", and "Test Palindrome". In particular, within MT3 and WT3/4, our approach works successfully for these functionalities, as well as "Create Encryption Key Files (F17)" and "Create Encryption Key Files". On the other hand, some functionalities such as "Bubble Sort Array (F7)", "Setup SGV (F8)", "Binary Search (F14)", and "Transpose a Matrix (F41)" make FaCoY less successful.
 The Funtionality information is able to be checked in the [function_information](https://docs.google.com/spreadsheets/d/1dvUICpQ46BLNrO5oPSxSYihlahC2TeDcUDCHt8potLw/edit?usp=sharing).
 
-![ScreenShot](https://github.com/facoy/facoy/tree/master/evaluation/bigclone/Hyun.png)
+![](https://github.com/facoy/facoy/tree/master/evaluation/bigclone/per-func-t1.pdf?raw=true)
 
 ## Analysis of false postives
 Although it is one of the highest-quality and largest benchmarks available to the research community, BigCloneBench clone information may not be complete. BigCloneBench is built via an incremental additive process (i.e., gradually relaxing search queries) based on keyword and source pattern matching. Thus, it may miss some clones despite the manual verification. 
