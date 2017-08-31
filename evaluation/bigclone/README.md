@@ -16,6 +16,8 @@ The following figure details the distribution.
 
 <img width="1605" alt="screen shot 2017-08-31 at 14 27 19" src="https://user-images.githubusercontent.com/26062775/29923236-1e436e0a-8e59-11e7-8781-46d8c7b0f852.png">
 
+
+[per-func-t1.pdf](https://github.com/facoy/facoy/files/1267687/per-func-t1.pdf)
 We sort the X-axis based on functionality numbers recorded in BigCloneBench. Then, we annotate functionality IDs to top/bottom four recall values. 
 
 ## Analysis of false postives
