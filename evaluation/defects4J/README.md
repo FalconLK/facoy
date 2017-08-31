@@ -13,7 +13,7 @@ Closure: 2/133<br />
 Chart: 3/26<br />
 
 ## All the queries we put into the FaCoY.
-[]: Ranking for the similar code snippet (highest rank)<br />
+[]: Rank(highest one only) for the results(similar code snippet) from the FaCoY<br />
 *: GitHub commit hash<br />
 ^: SVN revision number<br />
 
