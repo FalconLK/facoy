@@ -8,11 +8,13 @@ IJaDatset is divided into three categories (sample, default, selected) and we us
 BigCloneBench is a benchmark for clone detection mined from the IJaDataset-2.0 (25,000 subject systems, 365MLOC). The current version of the benchmark BigCloneBench is available at [BigCloneBench page](https://github.com/clonebench/BigCloneBench/blob/master/README.md). People can see plenty of java snippet clone pairs with various metadata such as functionalities, syntactic types, similarity lines, similarity tokens, projects of each function, etc.
 
 ## Funcionalities
-BigCloneBnech (IJADataset) has 43 functionalities while it has 8,345,104 clone pairs among the 22,285,855 clones. We also tried to separate the result for each of the function. It turns out, FaCoY shows high recall values for "Play Sound (F18)", "Take Screenshot to File (F19)", "XMPP Send Message (F21)", and "Test Palindrome". In particular, within MT3 and WT3/4, our approach works successfully for these functionalities, as well as "Create Encryption Key Files (F17)" and "Create Encryption Key Files". On the other hand, some functionalities such as "Bubble Sort Array (F7)", "Setup SGV (F8)", "Binary Search (F14)", and "Transpose a Matrix (F41)" make FaCoY less successful.
+BigCloneBnech (IJADataset) has 43 functionalities while it has 8,345,104 clone pairs among the 22,285,855 clones. We also tried to separate the result for each of the function. 
+It turns out, FaCoY shows high recall values for "Play Sound (F18)", "Take Screenshot to File (F19)", "XMPP Send Message (F21)", and "Test Palindrome". In particular, within MT3 and WT3/4, our approach works successfully for these functionalities, as well as "Create Encryption Key Files (F17)" and "Create Encryption Key Files". On the other hand, some functionalities such as "Bubble Sort Array (F7)", "Setup SGV (F8)", "Binary Search (F14)", and "Transpose a Matrix (F41)" make FaCoY less successful.
 The Funtionality information is able to be checked in the [function_information](https://docs.google.com/spreadsheets/d/1dvUICpQ46BLNrO5oPSxSYihlahC2TeDcUDCHt8potLw/edit?usp=sharing).
 
-<img width="1610" alt="funcs" src="https://user-images.githubusercontent.com/26062775/29922971-0c77535e-8e58-11e7-91e4-94b353e15b8e.png">
+We sort the X-axis based on functionality numbers recorded in BigCloneBench. Then, we annotate functionality IDs to top/bottom four recall values. The following figure details the distribution.
 
+<img width="1605" alt="screen shot 2017-08-31 at 14 27 19" src="https://user-images.githubusercontent.com/26062775/29923236-1e436e0a-8e59-11e7-8781-46d8c7b0f852.png">
 
 ## Analysis of false postives
 Although it is one of the highest-quality and largest benchmarks available to the research community, BigCloneBench clone information may not be complete. BigCloneBench is built via an incremental additive process (i.e., gradually relaxing search queries) based on keyword and source pattern matching. Thus, it may miss some clones despite the manual verification. 
