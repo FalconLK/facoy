@@ -1,3 +1,5 @@
+![logo][https://github.com/facoy/facoy/tree/master/evaluation/bigclone/per-func-t1.pdf]
+
 # Running FaCoY on IJaDataset and evaluating on BigCloneBench (RQ2)
 
 ## IJaDataset
