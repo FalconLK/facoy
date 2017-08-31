@@ -1,4 +1,4 @@
-![FaCoY logo][logo]
+![alt text](https://raw.githubusercontent.com/facoy/facoy/FaCoY_Logo.png)
 
 # Running FaCoY on IJaDataset and evaluating on BigCloneBench (RQ2)
 
