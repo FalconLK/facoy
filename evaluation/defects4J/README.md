@@ -13,9 +13,9 @@ Closure: 2/133<br />
 Chart: 3/26<br />
 
 ## All the queries we put into the FaCoY.
-[]: Ranking for the similar code snippet (highest rank)
-*: GitHub commit hash
-^: SVN revision number
+[]: Ranking for the similar code snippet (highest rank)<br />
+*: GitHub commit hash<br />
+^: SVN revision number<br />
 
 [Lang_11](/evaluation/defects4J/snippets/Lang_11) [2nd]
 *80452c7a42777513c35fd30c4e12bcd7ee438fb9
