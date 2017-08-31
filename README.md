@@ -1,6 +1,3 @@
-![logo](https://raw.githubusercontent.com/facoy/facoy/tree/master/FaCoY_Logo.png)
-
-![ScreenShot](https://raw.githubusercontent.com/i-saumitra/Voice-controlled-MP3-Player/master/screenshot.jpg)
 
 # FaCoY
 This repository shares data and code used for the FaCoY project.
