@@ -62,7 +62,7 @@ Chart: 3/26
 [Time_3](/evaluation/defects4J/snippets/Time_3) [10th]
 *8d109fe1a999a11b4557536dd96f9210460a5936 
 
-[Time_15](/evaluation/defects4J/snippets/Time_15) [11s]t
+[Time_15](/evaluation/defects4J/snippets/Time_15) [11st]
 *0cefc4c212e92e5dccdfa658785c419483317558 
 
 [Closure_20](/evaluation/defects4J/snippets/Closure_20) [1st]
