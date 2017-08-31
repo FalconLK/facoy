@@ -1,4 +1,4 @@
-![logo](facoy/FaCoY_Logo.png)
+![logo](https://github.com/facoy/facoy/tree/master/FaCoY_Logo.png)
 # FaCoY
 This repository shares data and code used for the FaCoY project.
 
