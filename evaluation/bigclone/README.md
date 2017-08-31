@@ -1,4 +1,4 @@
-![alt text](https://github.com/facoy/facoy/tree/master/FaCoY_Logo.png?raw=true)
+![](https://raw.githubusercontent.com/facoy/facoy/tree/master/FaCoY_Logo.png?raw=true)
 
 # Running FaCoY on IJaDataset and evaluating on BigCloneBench (RQ2)
 
