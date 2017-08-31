@@ -4,13 +4,13 @@ We put 395 buggy codes from [Defects4J benchmark](https://github.com/rjust/defec
 
 Since we have a indexed github data, FaCoY can also find the exact same file. The goal was to find similar code snippets that can help correct bugs while the candidates were not from the exact same file. 
 
-We found 21 patches among 395 bugs, project-specific results are below.
+We found 21 patches among 395 bugs, project-specific results are below.<br />
 Lang: 6/65<br />
-Math: 5/106
-Mockito: 3/38
-Time: 2/27
-Closure: 2/133
-Chart: 3/26
+Math: 5/106<br />
+Mockito: 3/38<br />
+Time: 2/27<br />
+Closure: 2/133<br />
+Chart: 3/26<br />
 
 ## All the queries we put into the FaCoY.
 []: Ranking for the similar code snippet (highest rank)
