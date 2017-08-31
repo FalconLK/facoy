@@ -14,7 +14,7 @@ The Funtionality information is able to be checked in the [function_information]
 
 The following figure details the distribution.
 
-<img width="444" alt="screen shot 2017-08-31 at 18 01 19" src="https://user-images.githubusercontent.com/26062775/29933043-77bb8da6-8e76-11e7-95b0-679c11895800.png">
+<img width="666" alt="screen shot 2017-08-31 at 18 01 19" src="https://user-images.githubusercontent.com/26062775/29933043-77bb8da6-8e76-11e7-95b0-679c11895800.png">
 
 
 We sort the X-axis based on functionality numbers recorded in BigCloneBench. Then, we annotate functionality IDs to top/bottom four recall values. 
