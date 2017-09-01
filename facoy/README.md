@@ -16,13 +16,13 @@ We set up the credential, “user” as the username and “1234” as the passw
 
 ```
 cd /home/user/Desktop/FACoY/GitSearch
-jython bootstrap.py ./FrontEnd/server_IJaData.py
+jython bootstrap.py ./FrontEnd/server_GitHub.py
 ```
 
 When you can see the message "* Running on http://0.0.0.0:5000/ (Press Ctrl+C to quit)", it is ready.
 
 5. Open the firefox browser & let's go to http://0.0.0.0:5000
-6. Now the search engine may be showed up. You can put any source code snippet into the text box. If you want to use sample code snippets, you can find several samples in the path "/home/user/Desktop/FACoY/Sample Codes/IJa_samples". 
+6. Now the search engine may be showed up. You can put any source code snippet into the text box. If you want to use sample code snippets, you can find several samples in the path "/home/user/Desktop/Sample Codes/Git_samples". 
 
 ***Each step might take some time since it is running on a virtual machine.**
 
