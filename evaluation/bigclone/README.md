@@ -17,7 +17,7 @@ The following figure details the distribution.
 <p align="center">
 <img width="350" alt="t1" src="https://user-images.githubusercontent.com/26062775/30021650-58eba2c2-9168-11e7-9de1-2b5298a77c67.png">
 <img width="350" alt="t2" src="https://user-images.githubusercontent.com/26062775/30021661-64fc4fa8-9168-11e7-8b90-874493627e7e.png">
-<pre align="center">Type-1                                      Type-2</pre>
+<pre align="center">Type-1                                        Type-2</pre>
 </p>
 
 <br /><br />
@@ -33,7 +33,7 @@ The following figure details the distribution.
 <p align="center">
 <img width="350" alt="t3mt" src="https://user-images.githubusercontent.com/26062775/30021681-7b0b3a52-9168-11e7-9da7-3bec357ae4ef.png">
 <img width="350" alt="t4" src="https://user-images.githubusercontent.com/26062775/30021699-8a361d3a-9168-11e7-876e-db6681d9983e.png">
-<pre align="center">Type-1                                      Type-2</pre>
+<pre align="center">Type-3-MT                                        Type-4</pre>
 </p>
 
 
