@@ -15,12 +15,12 @@ The Funtionality information is able to be checked in the [function_information]
 The following figure details the distribution.
 
 
-<div text-align="center">
+<div style="float=left display=inline-block text-align=center"> 
 <img width="400" alt="t1" src="https://user-images.githubusercontent.com/26062775/30018339-c9c64012-915c-11e7-9756-a37f7cc18883.png">
 Type-1
 </div>
 
-<div text-align="center">
+<div style="float=left display=inline-block text-align=center"> 
 <img width="400" alt="t2" src="https://user-images.githubusercontent.com/26062775/30018350-dadcdca8-915c-11e7-80bd-6443cd428bdf.png"> <br />  
 Type-2
 </div>
