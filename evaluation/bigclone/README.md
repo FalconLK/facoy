@@ -14,60 +14,12 @@ The Funtionality information is able to be checked in the [function_information]
 
 The following figure details the distribution.
 
-<div style="float:left; display:block; width:66%;margin-bottom:10px;">
-    <div style="float:left; display:inline-block; text-align:center;"> 
-        <img width="300" alt="t1" src="https://user-images.githubusercontent.com/26062775/30018339-c9c64012-915c-11e7-9756-a37f7cc18883.png">
-        <p style="align:center;">Type-1</p>
-    </div>
-    <div style="float:left; display:inline-block; text-align:center;">
-        <img width="300" alt="t2" src="https://user-images.githubusercontent.com/26062775/30018350-dadcdca8-915c-11e7-80bd-6443cd428bdf.png"> 
-        <p style="align:center;">Type-2</p>
-    </div>
-</div>
-    <br />
-<div style="float:left; display:block;width:66%;margin-bottom:10px;">
-    <div style="float:left; display:inline-block; text-align:center;"> 
-        <img width="300" alt="t1" src="https://user-images.githubusercontent.com/26062775/30018339-c9c64012-915c-11e7-9756-a37f7cc18883.png">
-        <p style="margin-top:-5px;">Type-3</p>
-    </div>
-    <div style="float:left; display:inline-block; text-align:center;">
-        <img width="300" alt="t2" src="https://user-images.githubusercontent.com/26062775/30018350-dadcdca8-915c-11e7-80bd-6443cd428bdf.png"> 
-        <p style="margin-top:-5px;">Type-4</p>
-    </div>
-</div>
-    <br />
-<div style="float:left; display:block;width:66%;margin-bottom:10px;">
-    <div style="float:left; display:inline-block; text-align:center;"> 
-        <img width="300" alt="t1" src="https://user-images.githubusercontent.com/26062775/30018339-c9c64012-915c-11e7-9756-a37f7cc18883.png">
-        <p style="margin-top:-5px;">Type-5</p>
-    </div>
-    <div style="float:left; display:inline-block; text-align:center;">
-        <img width="300" alt="t2" src="https://user-images.githubusercontent.com/26062775/30018350-dadcdca8-915c-11e7-80bd-6443cd428bdf.png"> 
-        <p style="margin-top:-5px;">Type-6</p>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-<div style="float:left; display:inline-block; text-align:center;"> 
-<img width="400" alt="t1" src="https://user-images.githubusercontent.com/26062775/30018339-c9c64012-915c-11e7-9756-a37f7cc18883.png"><br />  
-Type-1
-</div>
-
-<div style="float:left; display:inline-block; text-align:center;"> 
-<img width="400" alt="t2" src="https://user-images.githubusercontent.com/26062775/30018350-dadcdca8-915c-11e7-80bd-6443cd428bdf.png"><br />  
-Type-2
-</div>
-
-<img width="400" alt="t3vst" src="https://user-images.githubusercontent.com/26062775/30018363-e22f3e9c-915c-11e7-8795-bec837e1f222.png">
-<img width="400" alt="t3st" src="https://user-images.githubusercontent.com/26062775/30018372-ed6a1d72-915c-11e7-8f1a-d4ca7436081b.png"> <br /><br />
-<img width="400" alt="t3mt" src="https://user-images.githubusercontent.com/26062775/30018381-f5d88782-915c-11e7-8169-b5da6d225cd4.png">
-<img width="400" alt="t4" src="https://user-images.githubusercontent.com/26062775/30018393-001a1f44-915d-11e7-9032-89be48a96db2.png"> <br /><br />
+<img width="400" alt="t1" src="https://user-images.githubusercontent.com/26062775/30021650-58eba2c2-9168-11e7-9de1-2b5298a77c67.png">
+<img width="400" alt="t2" src="https://user-images.githubusercontent.com/26062775/30021661-64fc4fa8-9168-11e7-8b90-874493627e7e.png">
+<img width="400" alt="t3vst" src="https://user-images.githubusercontent.com/26062775/30021662-6b9f9248-9168-11e7-964f-36945d26c7ed.png">
+<img width="400" alt="t3st" src="https://user-images.githubusercontent.com/26062775/30021672-74782d58-9168-11e7-8a77-f40281edc984.png">
+<img width="400" alt="t3mt" src="https://user-images.githubusercontent.com/26062775/30021681-7b0b3a52-9168-11e7-9da7-3bec357ae4ef.png">
+<img width="400" alt="t4" src="https://user-images.githubusercontent.com/26062775/30021699-8a361d3a-9168-11e7-876e-db6681d9983e.png">
 
 
 We sort the X-axis based on functionality numbers recorded in BigCloneBench. Then, we annotate functionality IDs to top/bottom four recall values. 
