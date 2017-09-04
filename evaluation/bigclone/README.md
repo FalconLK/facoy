@@ -17,6 +17,8 @@ The following figure details the distribution.
 <p align="center">
 <img width="400" alt="t1" src="https://user-images.githubusercontent.com/26062775/30018339-c9c64012-915c-11e7-9756-a37f7cc18883.png">
 <img width="400" alt="t2" src="https://user-images.githubusercontent.com/26062775/30018350-dadcdca8-915c-11e7-80bd-6443cd428bdf.png"> <br /><br />
+  
+Type-1              Type-2
 <img width="400" alt="t3vst" src="https://user-images.githubusercontent.com/26062775/30018363-e22f3e9c-915c-11e7-8795-bec837e1f222.png">
 <img width="400" alt="t3st" src="https://user-images.githubusercontent.com/26062775/30018372-ed6a1d72-915c-11e7-8f1a-d4ca7436081b.png"> <br /><br />
 <img width="400" alt="t3mt" src="https://user-images.githubusercontent.com/26062775/30018381-f5d88782-915c-11e7-8169-b5da6d225cd4.png">
