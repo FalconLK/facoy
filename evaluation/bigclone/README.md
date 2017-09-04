@@ -14,12 +14,12 @@ The Funtionality information is able to be checked in the [function_information]
 
 The following figure details the distribution.
 
-<img width="400" alt="t1" src="https://user-images.githubusercontent.com/26062775/30021650-58eba2c2-9168-11e7-9de1-2b5298a77c67.png">
-<img width="400" alt="t2" src="https://user-images.githubusercontent.com/26062775/30021661-64fc4fa8-9168-11e7-8b90-874493627e7e.png">
-<img width="400" alt="t3vst" src="https://user-images.githubusercontent.com/26062775/30021662-6b9f9248-9168-11e7-964f-36945d26c7ed.png">
-<img width="400" alt="t3st" src="https://user-images.githubusercontent.com/26062775/30021672-74782d58-9168-11e7-8a77-f40281edc984.png">
-<img width="400" alt="t3mt" src="https://user-images.githubusercontent.com/26062775/30021681-7b0b3a52-9168-11e7-9da7-3bec357ae4ef.png">
-<img width="400" alt="t4" src="https://user-images.githubusercontent.com/26062775/30021699-8a361d3a-9168-11e7-876e-db6681d9983e.png">
+<img width="350" alt="t1" src="https://user-images.githubusercontent.com/26062775/30021650-58eba2c2-9168-11e7-9de1-2b5298a77c67.png">
+<img width="350" alt="t2" src="https://user-images.githubusercontent.com/26062775/30021661-64fc4fa8-9168-11e7-8b90-874493627e7e.png">
+<img width="350" alt="t3vst" src="https://user-images.githubusercontent.com/26062775/30021662-6b9f9248-9168-11e7-964f-36945d26c7ed.png">
+<img width="350" alt="t3st" src="https://user-images.githubusercontent.com/26062775/30021672-74782d58-9168-11e7-8a77-f40281edc984.png">
+<img width="350" alt="t3mt" src="https://user-images.githubusercontent.com/26062775/30021681-7b0b3a52-9168-11e7-9da7-3bec357ae4ef.png">
+<img width="350" alt="t4" src="https://user-images.githubusercontent.com/26062775/30021699-8a361d3a-9168-11e7-876e-db6681d9983e.png">
 
 
 We sort the X-axis based on functionality numbers recorded in BigCloneBench. Then, we annotate functionality IDs to top/bottom four recall values. 
