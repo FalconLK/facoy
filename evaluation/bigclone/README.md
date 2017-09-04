@@ -33,7 +33,7 @@ The following figure details the distribution.
 <p align="center">
 <img width="350" alt="t3mt" src="https://user-images.githubusercontent.com/26062775/30021681-7b0b3a52-9168-11e7-9da7-3bec357ae4ef.png">
 <img width="350" alt="t4" src="https://user-images.githubusercontent.com/26062775/30021699-8a361d3a-9168-11e7-876e-db6681d9983e.png">
-<pre align="center">Type-3-MT                                     Type-4</pre>
+<pre align="center">Type-3-MT                                    Type-4</pre>
 </p>
 
 
