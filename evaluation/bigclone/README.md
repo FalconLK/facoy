@@ -22,12 +22,12 @@ The following figure details the distribution.
 <br /><br />
 <img width="350" alt="t3vst" src="https://user-images.githubusercontent.com/26062775/30021662-6b9f9248-9168-11e7-964f-36945d26c7ed.png">
 <img width="350" alt="t3st" src="https://user-images.githubusercontent.com/26062775/30021672-74782d58-9168-11e7-8a77-f40281edc984.png">
-Type-3-VST Type-3-ST
+<pre align="center">Type-3-VST                                      Type-3-ST</pre>
 
 <br /><br />
 <img width="350" alt="t3mt" src="https://user-images.githubusercontent.com/26062775/30021681-7b0b3a52-9168-11e7-9da7-3bec357ae4ef.png">
 <img width="350" alt="t4" src="https://user-images.githubusercontent.com/26062775/30021699-8a361d3a-9168-11e7-876e-db6681d9983e.png">
-Type-3-MT Type-4
+<pre align="center">Type-1                                      Type-2</pre>
 </p>
 
 
