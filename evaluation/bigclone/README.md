@@ -17,11 +17,11 @@ The following figure details the distribution.
 <div style="float:left; display:block; width:66%;margin-bottom:10px;">
     <div style="float:left; display:inline-block; text-align:center;"> 
         <img width="300" alt="t1" src="https://user-images.githubusercontent.com/26062775/30018339-c9c64012-915c-11e7-9756-a37f7cc18883.png">
-        <p style="text-align:center;">Type-1</p>
+        <p style="align:center;">Type-1</p>
     </div>
     <div style="float:left; display:inline-block; text-align:center;">
         <img width="300" alt="t2" src="https://user-images.githubusercontent.com/26062775/30018350-dadcdca8-915c-11e7-80bd-6443cd428bdf.png"> 
-        <p style="text-align:center;">Type-2</p>
+        <p style="align:center;">Type-2</p>
     </div>
 </div>
     <br />
