@@ -18,33 +18,33 @@ The following figure details the distribution.
 <body>
     <div style="float:left; display:block; width:66%;margin-bottom:10px;">
         <div style="float:left; display:inline-block; text-align:center;"> 
-            <img width="400" alt="t1" src="https://user-images.githubusercontent.com/26062775/30018339-c9c64012-915c-11e7-9756-a37f7cc18883.png">
+            <img width="300" alt="t1" src="https://user-images.githubusercontent.com/26062775/30018339-c9c64012-915c-11e7-9756-a37f7cc18883.png">
             <p style="margin-top:-5px;">Type-1</p>
         </div>
         <div style="float:left; display:inline-block; text-align:center;">
-            <img width="400" alt="t2" src="https://user-images.githubusercontent.com/26062775/30018350-dadcdca8-915c-11e7-80bd-6443cd428bdf.png"> 
+            <img width="300" alt="t2" src="https://user-images.githubusercontent.com/26062775/30018350-dadcdca8-915c-11e7-80bd-6443cd428bdf.png"> 
             <p style="margin-top:-5px;">Type-2</p>
         </div>
     </div>
         <br />
     <div style="float:left; display:block;width:66%;margin-bottom:10px;">
         <div style="float:left; display:inline-block; text-align:center;"> 
-            <img width="400" alt="t1" src="https://user-images.githubusercontent.com/26062775/30018339-c9c64012-915c-11e7-9756-a37f7cc18883.png">
+            <img width="300" alt="t1" src="https://user-images.githubusercontent.com/26062775/30018339-c9c64012-915c-11e7-9756-a37f7cc18883.png">
             <p style="margin-top:-5px;">Type-3</p>
         </div>
         <div style="float:left; display:inline-block; text-align:center;">
-            <img width="400" alt="t2" src="https://user-images.githubusercontent.com/26062775/30018350-dadcdca8-915c-11e7-80bd-6443cd428bdf.png"> 
+            <img width="300" alt="t2" src="https://user-images.githubusercontent.com/26062775/30018350-dadcdca8-915c-11e7-80bd-6443cd428bdf.png"> 
             <p style="margin-top:-5px;">Type-4</p>
         </div>
     </div>
         <br />
     <div style="float:left; display:block;width:66%;margin-bottom:10px;">
         <div style="float:left; display:inline-block; text-align:center;"> 
-            <img width="400" alt="t1" src="https://user-images.githubusercontent.com/26062775/30018339-c9c64012-915c-11e7-9756-a37f7cc18883.png">
+            <img width="300" alt="t1" src="https://user-images.githubusercontent.com/26062775/30018339-c9c64012-915c-11e7-9756-a37f7cc18883.png">
             <p style="margin-top:-5px;">Type-5</p>
         </div>
         <div style="float:left; display:inline-block; text-align:center;">
-            <img width="400" alt="t2" src="https://user-images.githubusercontent.com/26062775/30018350-dadcdca8-915c-11e7-80bd-6443cd428bdf.png"> 
+            <img width="300" alt="t2" src="https://user-images.githubusercontent.com/26062775/30018350-dadcdca8-915c-11e7-80bd-6443cd428bdf.png"> 
             <p style="margin-top:-5px;">Type-6</p>
         </div>
     </div>
