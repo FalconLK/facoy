@@ -4,22 +4,22 @@
 This repository shares data and code used for the FaCoY project.
 
 ## Code
-https://github.com/facoy/facoy/tree/master/facoy
+https://github.com/facoy/facoy/tree/release-1.0/facoy
 
 
 
 ## Evaluation data
 
 ### RQ1
-https://github.com/facoy/facoy/tree/master/evaluation/onlinequery
+https://github.com/facoy/facoy/tree/release-1.0/evaluation/onlinequery
 
 ### RQ2
-https://github.com/facoy/facoy/tree/master/evaluation/bigclone
+https://github.com/facoy/facoy/tree/release-1.0/evaluation/bigclone
 
 ### RQ3
-https://github.com/facoy/facoy/tree/master/evaluation/dyclink
+https://github.com/facoy/facoy/tree/release-1.0/evaluation/dyclink
 
 ### RQ4
-https://github.com/facoy/facoy/tree/master/evaluation/defects4J
+https://github.com/facoy/facoy/tree/release-1.0/evaluation/defects4J
       
       
