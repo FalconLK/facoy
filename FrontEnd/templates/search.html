@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--<meta http-equiv="content-Type" content="text/html;charset=UTF-8">-->
+    <title>FaCoY - Find a Code other than Yours</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" href="../static/css/baseline.css">
+	<link rel="stylesheet" href="../static/css/search.css">
+
+	<script type="text/javascript">
+			$(function() {
+				matched_terms = {{git_search_result.global_matched_terms | tojson | safe}} ;
+				matched_terms.sort(function(a, b){return b.length - a.length});
+				$("pre").highlight(matched_terms);
+			});
+	</script>
+	<script type="text/javascript" src="js/controller.js"></script>
+</head>
+
+<body>
+<div id="top">
+	<img src="../static/FaCoY_Logo.png" style="width:10%;display:inline-block;float:left;margin-top:-5px;"/>
+	<form style="display:block;margin-top:-11px;margin-left:-35%;margin-right:30%;">
+		<!--<textarea type="text" name="q" style="padding:17px; width: 50%; height: 35px; color:#858c91; height:24px; font-size: 25px" > {{ request.args.get('q') }} </textarea>-->
+		<input type="text" name="q" value="{{ request.args.get('q') }}" maxlength="15" class="textbox" />
+		<input type="image" src="../static/search_icon.png" class="button"/>
+	</form>
+	<!--<div class="search_results">
+		<span>Results {{total_num}}</span>  
+	</div>-->
+</div>
+<div id="code_container">
+	<h2 id="query">
+		<div class="title">Your Code Snippet</div>
+        <div class="simple">Mouse over to see!</div>
+		<div class="detail">{{ query }}</div>
+	</h2>
+	{% for item in git_search_result.items %}
+		<div class="snippet_item">
+			<div class="snippet_metadata">
+				<span><b>Title:</b> <a href="http://stackoverflow.com/questions/{{item.so_item.answer_id}}" target="_blank"> {{item.so_item.title}}</a></span> <br>
+				<!-- <span><b>Source: </b> <a href="http://localhost:5001/source?q={{to_q(item.file_path)}}" target="_blank"> {{item.file_name}}</a></span> <br> -->
+				<span><b>Source: </b> <a href="{{item.github_link}}" target="_blank"> {{item.file_path}}</a></span> <br>
+				<span><b>Description: </b> {{item.so_item.description}}</span> <br>
+				<!-- <span><b>Matched Keywords: </b> {{item.matched_terms}}</span> <br> -->
+				<span><b>Score: </b> {{item.score}}</span>
+			</div>
+			<div class="snippet_code">
+				{% for snippet in item.code_snippets %}
+	        		<a target="_blank" href="{{item.github_link}}#L{{snippet.startline}}">{{ snippet.html|safe }}</a>
+	        	{% endfor %}
+	        </div>
+        </div>
+    {% endfor %}
+</div>
+<!--<div id="sidebar">
+	<h2 class="title">Engine Log</h2>
+	<pre>{{ search_log }}</pre>
+</div>-->
+</body>
+</html>

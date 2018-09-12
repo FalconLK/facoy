@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GitSearch - A source code search engine for GitHub</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+
+    <style type="text/css">
+	html, body {
+   		height: 100%;
+	}
+	.main {
+	    height: 100%;
+	    width: 100%;
+	    display: table;
+	}
+	.wrapper {
+	    display: table-cell;
+	    height: 100%;
+	    vertical-align: middle;
+	}
+	input:focus{
+		outline: 0
+	}
+
+	#top {
+	  position: fixed;
+	  top: 10;
+	  left: 0;
+	  z-index: 999;
+	  width: 100%;
+	  height: 23px;
+	}
+    </style>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    // 	$(function(){
+    // 		var i = 0;
+
+    // 		$("#google-form").load(function(){
+    // 			try{
+				//    $("#google-form").contents().find("#ss-submit");
+				// }catch(exception){
+				//   window.location.replace("/study11");
+				// }    			
+    // 		});
+    // 	});
+    </script>
+</head>
+<body style="text-align: center">
+
+
+	<div class="main">
+		<div class="wrapper">
+			<div style="margin-left: auto; margin-right: auto">
+				<img src="/img/uni.png" style="width: 100px; padding:5px">
+				<h1>User Study of Code Search Engines</h1>
+				<div style="margin-left: auto; margin-right: auto; width: 50%; background-color: #fcf8e3; border: 1px dashed gray; padding: 5px; margin-bottom: 15px;">
+					<div style="color: red; padding: 2px; font-size: 20px">Step 1.</div>
+					<span style="display: block; font-size: 18px"> Please Fill out this anonymised information form before starting the study </span>
+					<span style="display: block; font-size: 18px"> Study Duration: Completion of the three surveys will take approximately 20 - 30 minutes </span>
+				</div>
+				<iframe id="google-form" src="https://docs.google.com/forms/d/1OpCSatjYZyzlMMS7Iv9cH32SA1JyC-rH2E3GBEyknWU/viewform?embedded=true" width="760" height="460" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+				<div style="margin-left: auto; margin-right: auto; width: 50%; background-color: #fcf8e3; border: 1px dashed gray; padding: 5px; margin-top: 15px;  margin-bottom: 30px;">
+					<div style="color: red; padding: 2px; font-size: 20px">Step 2.</div>
+					<span style="display: block; font-size: 18px">To start the study click the button that applies to you</span>  <!-- the button that applies to you: -->
+					<form method="POST">
+						<input type="submit" name="participant" value="Student">
+						<input type="submit" name="participant" value="Researcher">
+						<input type="submit" name="participant" value="Developer">
+					</form>
+				</div>
+				
+				<!-- <form method="POST">
+					<input type="submit" name="participant" value="Student">
+					<input type="submit" name="participant" value="Researcher">
+					<input type="submit" name="participant" value="Developer">
+				</form> -->
+
+			</div>
+		</div>
+	</div>
+
+
+	
+</body>
+</html>

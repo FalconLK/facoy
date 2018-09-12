@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GitSearch - A source code search engine for GitHub</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+
+    <style type="text/css">
+	html, body {
+   		height: 100%;
+	}
+	.main {
+	    height: 100%;
+	    width: 100%;
+	    display: table;
+	}
+	.wrapper {
+	    display: table-cell;
+	    height: 100%;
+	    vertical-align: middle;
+	}
+	input:focus{
+		outline: 0
+	}
+
+	#top {
+	  position: fixed;
+	  top: 10;
+	  left: 0;
+	  z-index: 999;
+	  width: 100%;
+	  height: 23px;
+	}
+
+	table {
+			border-spacing: 0px;
+			width: 60%;
+			text-align: left;
+		}
+		
+		table td{
+			background-color: lightblue;
+			padding: 3px;
+		}
+    </style>
+</head>
+<body style="text-align: center">
+	<div style="position:absolute; top:0; right:0; width: 200px; height: 40px; background-color: lightblue; line-height:40px; text-align: center"><b>Study 3/3</b></div>
+
+	<div class="main"><div class="wrapper">
+		<div style="margin-left: auto; margin-right: auto">
+			<center>
+			<table>
+				<tr style="font-size: 26px;">
+					<td>Scenario:</td>
+					<td><b>{{queries[i].title}} </b></td>
+				</tr>
+				<tr style="font-size: 18px;">
+					<td style="vertical-align: top">Description:</td>
+					<td>{{queries[i].description}} </td>
+				</tr>
+			</table>
+			
+			
+				<div style="text-align: left; width: 70%; font-size: 20px; margin-top: 15px; background-color: linen;border: 1px dashed black; margin-bottom: 15px">
+					<ul>
+						<li>You are nearly finished with the survey</li>
+						<li>Formulate queries that describe the above mentioned search scenario above</li>
+						<li>You can use any keywords as they deem appropriate</li>
+						<li>Results might take time to load</li>
+					</ul>					
+				</div>				
+			</center>
+			
+
+			<form>
+			<input type="text" name="q" style="padding:17px; width: 50%; height: 35px; color:#858c91; height:24px; font-size: 25px" />
+			<input type="submit" value="Search" style="background-color: #3f4b55; padding:17px 30px 17px; font-weight: 600; font-size: 25px; color: white; border: none"/>
+			<input type="hidden" name="n" value="{{i}}" />
+			</form>
+		</div>
+	</div></div>
+
+
+	
+</body>
+</html>

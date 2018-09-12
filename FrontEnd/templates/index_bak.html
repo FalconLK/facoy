@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GitSearch - A source code search engine for GitHub</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+
+    <style type="text/css">
+	html, body {
+   		height: 100%;
+	}
+	.main {
+	    height: 100%;
+	    width: 100%;
+	    display: table;
+	}
+	.wrapper {
+	    display: table-cell;
+	    height: 100%;
+	    vertical-align: middle;
+	}
+	input:focus{
+		outline: 0
+	}
+
+	#top {
+	  position: fixed;
+	  top: 10;
+	  left: 0;
+	  z-index: 999;
+	  width: 100%;
+	  height: 23px;
+	}
+    </style>
+</head>
+<body style="text-align: center">
+
+
+	<div class="main"><div class="wrapper">
+		<div style="margin-left: auto; margin-right: auto">
+      <img src="https://raw.githubusercontent.com/serval-snt-uni-lu/cocabu/master/gitsearch.png" width="400px" style="margin:20px">
+      <!--<img src="https://raw.githubusercontent.com/serval-snt-uni-lu/cocabu/master/cocabu.png" width="400px">-->
+			<form>
+			<input type="text" name="q" style="padding:17px; width: 50%; height: 35px; color:#858c91; height:24px; font-size: 25px" />
+			<input type="submit" value="Search" style="background-color: #3f4b55; padding:17px 30px 17px; font-weight: 600; font-size: 25px; color: white; border: none"/>
+			</form>
+      <div style="margin-left: auto; margin-right: auto; width: 50%; padding: 20px" >
+        <span>
+          GitSearch is a code search engine that resolves the vocabulary mismatch problem.
+          While other code search engines directly match user queries and source code, our engine translates and augments user queries into code-friendly queries. This process can improve code search results.
+        </span>
+      </div>
+		</div>
+	</div></div>
+
+
+
+</body>
+</html>

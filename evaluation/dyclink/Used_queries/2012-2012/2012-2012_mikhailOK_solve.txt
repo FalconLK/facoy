@@ -1,7 +1,0 @@
-private static void solve() throws IOException {
-		int testCases = nextInt();
-		for (int test = 1; test <= testCases; test++) {
-			out.print("Case #" + test + ":");
-			solveOneTest();
-		}
-	}

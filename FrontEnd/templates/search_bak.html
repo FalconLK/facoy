@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GitSearch - A source code search engine for GitHub</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+    <style type="text/css">
+	body > div {
+		text-align: center;
+	}
+	.main {
+	    height: 100%;
+	    width: 100%;
+	    display: table;
+	}
+	.wrapper {
+	    display: table-cell;
+	    height: 100%;
+	    vertical-align: middle;
+	}
+	input:focus{
+		outline: 0
+	}
+
+	#top {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  padding: 15px;
+	  z-index: 999;
+	  width: 100%;
+	  height: 23px;
+	  display: table;
+	  background-color: lightseagreen;
+
+	}
+
+	#body_wrapper{
+		height: 100%;
+	}
+
+
+	body .term-marker { background-color: yellow }
+td.linenos { background-color: #f0f0f0; padding-right: 10px; }
+span.lineno { background-color: #f0f0f0; padding: 0 5px 0 5px; }
+pre { line-height: 125%; }
+body .hll { background-color: #ffffcc }
+body  { background: #ffffff; }
+body .c { color: #888888 } /* Comment */
+body .err { color: #FF0000; background-color: #FFAAAA } /* Error */
+body .k { color: #008800; font-weight: bold } /* Keyword */
+body .o { color: #333333 } /* Operator */
+body .cm { color: #888888 } /* Comment.Multiline */
+body .cp { color: #557799 } /* Comment.Preproc */
+body .c1 { color: #888888 } /* Comment.Single */
+body .cs { color: #cc0000; font-weight: bold } /* Comment.Special */
+body .gd { color: #A00000 } /* Generic.Deleted */
+body .ge { font-style: italic } /* Generic.Emph */
+body .gr { color: #FF0000 } /* Generic.Error */
+body .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+body .gi { color: #00A000 } /* Generic.Inserted */
+body .go { color: #888888 } /* Generic.Output */
+body .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+body .gs { font-weight: bold } /* Generic.Strong */
+body .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+body .gt { color: #0044DD } /* Generic.Traceback */
+body .kc { color: #008800; font-weight: bold } /* Keyword.Constant */
+body .kd { color: #008800; font-weight: bold } /* Keyword.Declaration */
+body .kn { color: #008800; font-weight: bold } /* Keyword.Namespace */
+body .kp { color: #003388; font-weight: bold } /* Keyword.Pseudo */
+body .kr { color: #008800; font-weight: bold } /* Keyword.Reserved */
+body .kt { color: #333399; font-weight: bold } /* Keyword.Type */
+body .m { color: #6600EE; font-weight: bold } /* Literal.Number */
+body .s { background-color: #fff0f0 } /* Literal.String */
+body .na { color: #0000CC } /* Name.Attribute */
+body .nb { color: #007020 } /* Name.Builtin */
+body .nc { color: #BB0066; font-weight: bold } /* Name.Class */
+body .no { color: #003366; font-weight: bold } /* Name.Constant */
+body .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+body .ni { color: #880000; font-weight: bold } /* Name.Entity */
+body .ne { color: #FF0000; font-weight: bold } /* Name.Exception */
+body .nf { color: #0066BB; font-weight: bold } /* Name.Function */
+body .nl { color: #997700; font-weight: bold } /* Name.Label */
+body .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+body .nt { color: #007700 } /* Name.Tag */
+body .nv { color: #996633 } /* Name.Variable */
+body .ow { color: #000000; font-weight: bold } /* Operator.Word */
+body .w { color: #bbbbbb } /* Text.Whitespace */
+body .mb { color: #6600EE; font-weight: bold } /* Literal.Number.Bin */
+body .mf { color: #6600EE; font-weight: bold } /* Literal.Number.Float */
+body .mh { color: #005588; font-weight: bold } /* Literal.Number.Hex */
+body .mi { color: #0000DD; font-weight: bold } /* Literal.Number.Integer */
+body .mo { color: #4400EE; font-weight: bold } /* Literal.Number.Oct */
+body .sb { background-color: #fff0f0 } /* Literal.String.Backtick */
+body .sc { color: #0044DD } /* Literal.String.Char */
+body .sd { color: #DD4422 } /* Literal.String.Doc */
+body .s2 { background-color: #fff0f0 } /* Literal.String.Double */
+body .se { color: #666666; font-weight: bold; background-color: #fff0f0 } /* Literal.String.Escape */
+body .sh { background-color: #fff0f0 } /* Literal.String.Heredoc */
+body .si { background-color: #eeeeee } /* Literal.String.Interpol */
+body .sx { color: #DD2200; background-color: #fff0f0 } /* Literal.String.Other */
+body .sr { color: #000000; background-color: #fff0ff } /* Literal.String.Regex */
+body .s1 { background-color: #fff0f0 } /* Literal.String.Single */
+body .ss { color: #AA6600 } /* Literal.String.Symbol */
+body .bp { color: #007020 } /* Name.Builtin.Pseudo */
+body .vc { color: #336699 } /* Name.Variable.Class */
+body .vg { color: #dd7700; font-weight: bold } /* Name.Variable.Global */
+body .vi { color: #3333BB } /* Name.Variable.Instance */
+body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
+    </style>
+
+    <script type="text/javascript">
+			$(function() {
+				matched_terms = {{git_search_result.global_matched_terms | tojson | safe}} ;
+				matched_terms.sort(function(a, b){return b.length - a.length});
+				$("pre").highlight(matched_terms);
+			});
+	</script>
+
+	<script type="text/javascript">
+	!function($) {
+	$.fn.highlight = function(pat, ignore) {
+		function replaceDiacritics(str) {
+			var diacritics = [ [ /[\u00c0-\u00c6]/g, 'A' ],
+				[ /[\u00e0-\u00e6]/g, 'a' ],
+				[ /[\u00c7]/g, 'C' ],
+				[ /[\u00e7]/g, 'c' ],
+				[ /[\u00c8-\u00cb]/g, 'E' ],
+				[ /[\u00e8-\u00eb]/g, 'e' ],
+				[ /[\u00cc-\u00cf]/g, 'I' ],
+				[ /[\u00ec-\u00ef]/g, 'i' ],
+				[ /[\u00d1|\u0147]/g, 'N' ],
+				[ /[\u00f1|\u0148]/g, 'n' ],
+				[ /[\u00d2-\u00d8|\u0150]/g, 'O' ],
+				[ /[\u00f2-\u00f8|\u0151]/g, 'o' ],
+				[ /[\u0160]/g, 'S' ],
+				[ /[\u0161]/g, 's' ],
+				[ /[\u00d9-\u00dc]/g, 'U' ],
+				[ /[\u00f9-\u00fc]/g, 'u' ],
+				[ /[\u00dd]/g, 'Y' ],
+				[ /[\u00fd]/g, 'y' ]
+			];
+
+			for ( var i = 0; i < diacritics.length; i++) {
+				str = str.replace(diacritics[i][0], diacritics[i][1]);
+			}
+
+			return str;
+		}
+
+		function innerHighlight(node, pat, ignore) {
+			var skip = 0;
+			if (node.nodeType == 3) {
+				var isPatternArray = $.isArray(pat);
+				if (!isPatternArray) {
+					pat = [pat];
+				}
+				var patternCount = pat.length;
+				for (var ii = 0; ii < patternCount; ii++) {
+					var currentTerm = (ignore ? replaceDiacritics(pat[ii]) : pat[ii]).toUpperCase();
+					var pos = (ignore ? replaceDiacritics(node.data) : node.data).toUpperCase().indexOf(currentTerm);
+					if (pos >= 0) {
+						var spannode = document.createElement('span');
+						spannode.className = 'term-marker';
+						var middlebit = node.splitText(pos);
+						var endbit = middlebit.splitText(currentTerm.length);
+						var middleclone = middlebit.cloneNode(true);
+						spannode.appendChild(middleclone);
+						middlebit.parentNode.replaceChild(spannode, middlebit);
+						skip = 1;
+					}
+				}
+			} else if (node.nodeType == 1 && node.childNodes && !/(script|style)/i.test(node.tagName)) {
+				for (var i = 0; i < node.childNodes.length; ++i) {
+					i += innerHighlight(node.childNodes[i], pat, ignore);
+				}
+			}
+			return skip;
+		}
+		return this.length && pat && pat.length ? this.each(function() {
+			ignore = typeof ignore !== 'undefined' ? ignore : $.fn.highlight.defaults.ignore;
+			innerHighlight(this, pat, ignore);
+		}) : this;
+	};
+
+	$.fn.highlight.defaults = {
+		ignore : false
+	}
+
+	$.fn.removeHighlight = function() {
+		return this.find("span.highlight").each(function() {
+			this.parentNode.firstChild.nodeName;
+			with(this.parentNode) {
+				replaceChild(this.firstChild, this);
+				normalize();
+			}
+		}).end();
+	};
+}(window.jQuery);
+	</script>
+</head>
+
+<body >
+	<div id="body_wrapper">
+
+
+	<!-- <div id="wrap">
+	  <form action="" autocomplete="on">
+	  	<input id="search" name="search" type="text" placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher" type="submit">
+	  </form>
+	</div> -->
+		<div id="top">
+			<form>
+				<input type="text" name="q" value="{{ request.args.get('q') }}" maxlength="15" style="padding:17px; width: 50%; height: 35px; color:#858c91; height:24px; font-size: 25px" />
+				<input type="submit" value="Search" style="background-color: #3f4b55; padding:17px 30px 17px; font-weight: 600; font-size: 25px; color: white; border: none"/>
+			</form>
+		</div>
+
+		<div id="code_container" style="position: relative; top: 120px; font-size: 15px; padding-bottom: 100px">
+
+			<h2>Results for: '{{ name }}'</h2>
+			{% for item in git_search_result.items %}
+					<div class="snippet_item" style="margin-left: 20%; text-align: left; margin-top: 20px">
+						<div style="padding: 15px; background-color: khaki;font-family: Verdana">
+							<span><b>Title:</b> <a href="http://stackoverflow.com/questions/{{item.so_item.answer_id}}" target="_blank"> {{item.so_item.title}}</a></span> <br>
+							<!-- <span><b>Source: </b> <a href="http://localhost:5001/source?q={{to_q(item.file_path)}}" target="_blank"> {{item.file_name}}</a></span> <br> -->
+							<span><b>Source: </b> <a href="{{item.github_link}}" target="_blank"> {{item.file_name}}</a></span> <br>
+							<span><b>Description: </b> {{item.so_item.description}}</span> <br>
+							<!-- <span><b>Matched Keywords: </b> {{item.matched_terms}}</span> <br> -->
+							<span><b>Score: </b> {{item.score}}</span>
+						</div>
+						<!-- <a href="http://localhost:5001/source?q={{to_q(item.file_path)}}"> -->
+							<div style="max-height: 400px; overflow: auto">
+								{% for snippet in item.code_snippets %}
+				        			<a target="_blank" href="{{item.github_link}}#L{{snippet.startline}}">{{ snippet.html|safe }}</a>
+				        		{% endfor %}
+				        	</div>
+			        	<!-- </a> -->
+			        </div>
+		    {% endfor %}
+		</div>
+	<div>
+</body>
+</html>

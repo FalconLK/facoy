@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<title>GitSearch - A source code search engine for GitHub</title>-->
+    <title>FaCoY - Find a Code other than Yours</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+
+    <style type="text/css">
+	html, body {
+   		height: 100%;
+	}
+	.main {
+	    height: 100%;
+	    width: 100%;
+	    display: table;
+	}
+	.wrapper {
+	    display: table-cell;
+	    height: 100%;
+	    vertical-align: middle;
+	}
+	input:focus{
+		outline: 0
+	}
+
+	#top {
+	  position: fixed;
+	  top: 10;
+	  left: 0;
+	  z-index: 999;
+	  width: 100%;
+	  height: 23px;
+	}
+	.footer{
+		width:100%;
+		display:block;
+		color:black;
+		font-size:9.5px;
+		border-top:solid 1px #dddddd;
+		background: #dddddd
+	}
+    </style>
+</head>
+<body style="text-align: center">
+
+
+<div class="main">
+	<div class="wrapper">
+		<div style="margin-left: auto; margin-right: auto">
+     <!--<img src="https://raw.githubusercontent.com/serval-snt-uni-lu/cocabu/master/gitsearch.png" width="400px" style="margin:20px">-->
+     		<img src="../static/FaCoY_Logo.png" width="400px" style="margin:20px">
+     <!--<img src="https://raw.githubusercontent.com/serval-snt-uni-lu/cocabu/master/cocabu.png" width="400px">-->
+			<form>
+               	<textarea type="text" name="q"  style="padding:17px; width: 50%; height:35px; color:#858c91; height:200px; font-size: 15px; wrap=virtual"></textarea>
+                <div>
+                    <input type="submit" value="Search" style="margin-top :20px; background-color: #3f4b55; padding:10px 30px 10px; font-weight: 600; font-size: 25px; color: white; border: none"/>
+			    </div>
+            </form>
+
+      	<div style="margin-left: auto; margin-right: auto; width: 50%; padding: 20px" >
+        	<span>
+          		<!--GitSearch is a code search engine that resolves the vocabulary mismatch problem.-->
+          		<!--While other code search engines directly match user queries and source code, our engine translates and augments user queries into code-friendly queries. This process can improve code search results.-->
+            	FaCoY is a code search engine that receives code fragments from users and retrieve the related code examples.
+            	While other code search engines directly match user free-form queries and source code, FaCoY translates and augments user queries into code-friendly queries. Further more, it considers semantic similarity for code examples.
+        	</span>
+      	</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<span>
+		Copyright 2017. Kisub Kim all rights reserved.
+	</span>
+</div>
+</body>
+</html>
