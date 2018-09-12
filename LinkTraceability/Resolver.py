@@ -192,7 +192,7 @@ imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
 }
 	"""
 
-	index = Searcher(snippet, "/Users/Raphael/Downloads/linkgithub")
+	index = Searcher(snippet, "/Users/Raphael/Downloads/linkgithub") ##????
 	sources = index.more_like_this()
 
 	#print "Sources", sources

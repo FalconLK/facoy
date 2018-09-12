@@ -47,8 +47,7 @@ def highlight_file(path):
     file_content = read_file(path)
     return highlight(file_content, JavaLexer(), HtmlFormatter(linenos=True, anchorlinenos=True, lineanchors="foo") )
 
-# INDICES_PATH = "/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Indices/"
-INDICES_PATH = "/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Indices/"
+INDICES_PATH = "/Indices/"
 
 application = Flask(__name__, static_folder='static')
 

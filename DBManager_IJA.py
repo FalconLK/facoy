@@ -31,13 +31,9 @@ class DBManager(object):
 
         Class.forName("com.mysql.jdbc.Driver").newInstance()
         newConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?", "root", "")
-        # newConn = DriverManager.getConnection("jdbc:mysql://203.255.81.42:3306/stackoverflow?autoReconnect=true", "seal", "sel535424")
         newConn.setAutoCommit(True)
         DBManager.GlobalConn = newConn
-        # DBManager.lock.release()
 
-        # print(u'[DBManager] reconnected to DB because of the time out which is %d seconds!' % DBManager.timeout)
-        # threading.Timer(DBManager.timeout, DBManager.autoconnection).start()
         pass
 
     @staticmethod
@@ -62,17 +58,3 @@ class DBManager(object):
         # DBManager.lock.release()
 
         return resultSet
-
-        # result_count = 0
-        # while resultSet.next():
-        #     result_count += 1
-        #     # items.append(resultSet.getInt(1))
-        #     items.append(resultSet.getInt('ID'))
-        #     items.append(resultSet.getInt('STARTLINE'))
-        #     items.append(resultSet.getInt('ENDLINE'))
-        # resultSet.close()
-        #
-        # DBManager.lock.release()
-        # return items, result_count
-
-    # -*- coding: utf-8 -*-

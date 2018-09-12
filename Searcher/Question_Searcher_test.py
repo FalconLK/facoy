@@ -1,33 +1,33 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import sys
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/jsoup-1.8.2.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/lucene-analyzers-common-4.10.4.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/lucene-core-4.10.4.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/lucene-queries-4.10.4.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/lucene-queryparser-4.10.4.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/jython-standalone-2.7.0.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/mysql-connector-java-5.1.22-bin.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/py4j-0.9.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.apache.commons.lang_2.6.0.v201205030909.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.cdt.core_5.6.0.201402142303.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.core.contenttype_3.4.200.v20120523-2004.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.core.jobs_3.5.200.v20120521-2346.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.core.resources.win32.x86_3.5.100.v20110423-0524.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.core.resources_3.8.0.v20120522-2034.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.core.runtime_3.8.0.v20120521-2346.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.equinox.common_3.6.100.v20120522-1841.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.equinox.preferences_3.5.0.v20120522-1841.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.jdt.core_3.8.1.v20120531-0637.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.jdt.ui_3.8.2.v20130107-165834.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.jface.text_3.8.0.v20120531-0600.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.ltk.core.refactoring_3.6.100.v20130605-1748.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.osgi_3.8.0.v20120529-1548.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.text_3.5.0.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/bson-3.0.2.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/mongodb-driver-3.0.2.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/mongodb-driver-core-3.0.2.jar")
+sys.path.append("/Libs/jsoup-1.8.2.jar")
+sys.path.append("/Libs/lucene-analyzers-common-4.10.4.jar")
+sys.path.append("/Libs/lucene-core-4.10.4.jar")
+sys.path.append("/Libs/lucene-queries-4.10.4.jar")
+sys.path.append("/Libs/lucene-queryparser-4.10.4.jar")
+sys.path.append("/Libs/jython-standalone-2.7.0.jar")
+sys.path.append("/Libs/mysql-connector-java-5.1.22-bin.jar")
+sys.path.append("/Libs/py4j-0.9.jar")
+sys.path.append("/Libs/org.apache.commons.lang_2.6.0.v201205030909.jar")
+sys.path.append("/Libs/org.eclipse.cdt.core_5.6.0.201402142303.jar")
+sys.path.append("/Libs/org.eclipse.core.contenttype_3.4.200.v20120523-2004.jar")
+sys.path.append("/Libs/org.eclipse.core.jobs_3.5.200.v20120521-2346.jar")
+sys.path.append("/Libs/org.eclipse.core.resources.win32.x86_3.5.100.v20110423-0524.jar")
+sys.path.append("/Libs/org.eclipse.core.resources_3.8.0.v20120522-2034.jar")
+sys.path.append("/Libs/org.eclipse.core.runtime_3.8.0.v20120521-2346.jar")
+sys.path.append("/Libs/org.eclipse.equinox.common_3.6.100.v20120522-1841.jar")
+sys.path.append("/Libs/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar")
+sys.path.append("/Libs/org.eclipse.equinox.preferences_3.5.0.v20120522-1841.jar")
+sys.path.append("/Libs/org.eclipse.jdt.core_3.8.1.v20120531-0637.jar")
+sys.path.append("/Libs/org.eclipse.jdt.ui_3.8.2.v20130107-165834.jar")
+sys.path.append("/Libs/org.eclipse.jface.text_3.8.0.v20120531-0600.jar")
+sys.path.append("/Libs/org.eclipse.ltk.core.refactoring_3.6.100.v20130605-1748.jar")
+sys.path.append("/Libs/org.eclipse.osgi_3.8.0.v20120529-1548.jar")
+sys.path.append("/Libs/org.eclipse.text_3.5.0.jar")
+sys.path.append("/Libs/bson-3.0.2.jar")
+sys.path.append("/Libs/mongodb-driver-3.0.2.jar")
+sys.path.append("/Libs/mongodb-driver-core-3.0.2.jar")
 
 from java.io import File, StringReader
 from org.apache.lucene.analysis.core import KeywordAnalyzer
@@ -47,7 +47,7 @@ from GitSearch.MyUtils import remove_unified_stop_lists
 from stemming.porter2 import stem
 from collections import namedtuple
 
-INDICES_PATH = "/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Indices/"
+INDICES_PATH = "/Indices/"
 
 ResultItem = namedtuple("ResultItem", "doc score title question_id")
 GithubResultItem = namedtuple("GithubResultItem", "file file_content matched_terms score so_item line_numbers doc_id")
@@ -57,7 +57,7 @@ java_stopwords = ["public","private","protected","interface","abstract","impleme
 "throws","throw","class", "finally","return","const" , "native", "super","while", "import",
 "package" ,"true", "false", "enum"]
 
-class GettingQuestionDocs:	#Index path를 입력으로 받은 객체를 생성하고 search를 통해 현재 Answer Serchear_1에서 받은 질문 리스트들에 대한 doc들을 얻을 것.
+class GettingQuestionDocs:	
 	def __init__(self, searcher, query=None):
 		self.searcher = searcher
 		self.query = query
@@ -73,10 +73,9 @@ class GettingQuestionDocs:	#Index path를 입력으로 받은 객체를 생성�
 	def search(self, q_ids, limit):
 		docs = []
 		c = 0
-		for i, q_id in enumerate(q_ids):#Index 가 안되어있는 Question은 찾지 못함.
+		for i, q_id in enumerate(q_ids):
 			query = TermQuery(Term("question_id", str(q_id)))
-			topdocs = self.searcher.search(query, 1).scoreDocs	#현재는 Accepted Answer 하나만 인덱싱 되기 때문에 1개로 한정
-			# index searcher에 TermQuery의 객체가 들어가고.. 질문 id에 달려있는 답변 중 상위 n개 가져옴/ scoreDocs는 점수 (소수형임..)
+			topdocs = self.searcher.search(query, 1).scoreDocs	
 			for hit in topdocs:
 				doc = self.searcher.doc(hit.doc)
 				docs.append(ResultItem(doc, len(q_ids) - i, doc.get("title"), doc.get("question_id")))
@@ -120,7 +119,7 @@ class SimilarQsSearcher:
 	def document_to_query(self, doc):
 		""" Given a document it transforms the source code related fields to a lucene query string"""
 		query = ""
-		for field in ["description"]:	#여기의 필드가 description 으로 설정 했고... 맨 끝에서 field, term이런식으로 넣으니.. 중복이 많음..
+		for field in ["description"]:
 			for val in doc.getFields(field):
 				if val.stringValue().strip():
 					term = QueryParser.escape(val.stringValue())
@@ -151,7 +150,7 @@ class SimilarQsSearcher:
 		for field in ["typed_method_call", "methods", "used_classes", "class_instance_creation", "methods_called"]:  # "extends", "annotations", "literals"
 			for val in doc.getFields(field):
 				if val.stringValue().strip():
-					term = QueryParser.escape(val.stringValue())	#이 자리에서 Unified Query 정제 되나 한번 보자......
+					term = QueryParser.escape(val.stringValue())	
 					stoplist = ["java.lang.Object"]
 					if term not in stoplist:
 						query += "%s:%s " % (field, term)
@@ -187,7 +186,7 @@ class SimilarQsSearcher:
 		return new_query
 
 
-	def more_like_this2(self, item_doc, result_num):	#들어온 질문 docs들에 대해 순회하면서 최종 query로 생성하고 Question Index에서 비슷한거 검색할 것.
+	def more_like_this2(self, item_doc, result_num):
 		similar_questions = []
 		if not item_doc:
 			item_doc.append(ResultItem(None, 1.0, "No Title", 0))
@@ -198,10 +197,10 @@ class SimilarQsSearcher:
 		query = remove_unified_stop_lists(query)
 		queryparser = QueryParser(Version.LUCENE_CURRENT, "term", self.analyzer)
 
-		if query:	#########이 시점에서의 Unified Query는 Tokenization, Stemming 이 되어있음..########
+		if query:	
 			try:
 				like_query = queryparser.parse(query)
-				hits = self.searcher.search(like_query, result_num).scoreDocs	#Q와 비슷한 Q들 상위 3개씩의 결과 그럼 총 9개
+				hits = self.searcher.search(like_query, result_num).scoreDocs
 
 				for i, hit in enumerate(hits):
 					doc = self.searcher.doc(hit.doc)
@@ -220,36 +219,3 @@ class SimilarQsSearcher:
 		return similar_questions
 
 	# def release(self, searcher):
-
-
-# if __name__ == '__main__':
-# 	###처음 생각 : Question들 꺼내오면 xml 형식으로 되어있으니.. 파싱해야되고.. 쭉 question id가 3개니 반복 3번 돌면서 비슷한 question들 3개씩 꺼내야함
-#
-# 	#실제 해야 할 일들..
-# 	#1. __Answer_Searcher_1 로 부터 넘어온 question id들 3개를 가지고 Question Index에서 해당 (구조화 되고 Tokenized 된) 정보가져옴.
-# 	#2. 가져온 3개의 정보들에 대해 각각 3개씩 비슷한 놈들을 뽑기 작업 (큰 반복이 3번 돌아야 함)
-#
-# 	question_ids = ['19464224', '11324006', '15708147'] #['4922', '39312589', '39310083']
-# 	similar_questions = []
-# 	#questions = QuestionSearcher("%squestionIndex" % (INDICES_PATH))    #인스턴스 생성
-#
-# 	getDoc = GettingQuestionDocs("%squestionIndex" % (INDICES_PATH))
-# 	item_docs = getDoc.search(question_ids, 3)
-#
-# 	question = SimilarQsSearcher("%squestionIndex" % (INDICES_PATH))
-#
-# 	for item_doc in item_docs:
-# 		similar_questions += question.more_like_this2(item_doc, 1)
-#
-# 	print similar_questions
-#
-#
-# 	#question_contents = questions.get_these(question_ids)
-#
-# 	#query = """<p>I searched here for this topic and I tried all I found, but it still does not work.</p>&#xA;&#xA;<pre><code>    import java.io.FileInputStream;&#xA;    import java.io.IOException;&#xA;&#xA;    import org.apache.commons.net.ftp.FTPClient;&#xA;&#xA;    import android.os.Bundle;&#xA;    import android.os.Environment;&#xA;    import android.app.Activity;&#xA;&#xA;&#xA;    public class MainActivity extends Activity {&#xA;&#xA;        public static final String TAG = "Contacts";&#xA;&#xA;        @Override&#xA;        protected void onCreate(Bundle savedInstanceState) {&#xA;            super.onCreate(savedInstanceState);&#xA;            setContentView(R.layout.activity_main);&#xA;</code></pre>&#xA;&#xA;<p>I made a Thread, because it wasn't allowed to run it on the main thread;</p>&#xA;&#xA;<pre><code>            Thread t = new Thread(new Runnable(){&#xA;                @Override&#xA;                public void run(){&#xA;                    Versuch();&#xA;                }&#xA;            });&#xA;            t.start();&#xA;    }&#xA;</code></pre>&#xA;&#xA;<p>Here I try to upload the data and it does not show me an error in Log Cat.</p>&#xA;&#xA;<pre><code>public void Versuch(){&#xA;        FTPClient client = new FTPClient();&#xA;        FileInputStream fis = null;&#xA;&#xA;        try {&#xA;            client.connect("ftp-web.example");&#xA;            client.login("ftpuser", "ftppassword");&#xA;&#xA;&#xA;            String filename = Environment.getExternalStorageDirectory().getAbsolutePath() + "/DCIM";&#xA;            fis = new FileInputStream(filename);&#xA;&#xA;            // Store file to server&#xA;            //&#xA;            client.storeFile(filename, fis);&#xA;            client.logout();&#xA;        } catch (IOException e) {&#xA;            e.printStackTrace();&#xA;        } finally {&#xA;            try {&#xA;                if (fis != null) {&#xA;                    fis.close();&#xA;                }&#xA;                client.disconnect();&#xA;            } catch (IOException e) {&#xA;                e.printStackTrace();&#xA;            }&#xA;        }&#xA;&#xA;&#xA;&#xA;    }&#xA;}&#xA;</code></pre>&#xA;"""
-# 	#tt = camel_case_split(query)
-#
-# 	#analyzer = PerFieldAnalyzerWrapper(PorterAnalyzer(StandardAnalyzer(Version.LUCENE_CURRENT)))
-# 	#tokens = tokenize_string(analyzer=analyzer, string=query)
-# 	#print tokens
-#

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import sys
 
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/jython-standalone-2.7.0.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/mysql-connector-java-5.1.22-bin.jar")
+sys.path.append("/Libs/jython-standalone-2.7.0.jar")
+sys.path.append("/Libs/mysql-connector-java-5.1.22-bin.jar")
 
 import codecs
 import os

@@ -3,40 +3,33 @@
 import time, codecs, sys, traceback, cgi, re, os
 sys.setrecursionlimit(50000)
 
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/jsoup-1.8.2.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/lucene-analyzers-common-4.10.4.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/lucene-core-4.10.4.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/lucene-queries-4.10.4.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/lucene-queryparser-4.10.4.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/jython-standalone-2.7.0.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/mysql-connector-java-5.1.22-bin.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/py4j-0.9.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.apache.commons.lang_2.6.0.v201205030909.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.cdt.core_5.6.0.201402142303.jar")
-sys.path.append(
-	"/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.core.contenttype_3.4.200.v20120523-2004.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.core.jobs_3.5.200.v20120521-2346.jar")
-sys.path.append(
-	"/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.core.resources.win32.x86_3.5.100.v20110423-0524.jar")
-sys.path.append(
-	"/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.core.resources_3.8.0.v20120522-2034.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.core.runtime_3.8.0.v20120521-2346.jar")
-sys.path.append(
-	"/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.equinox.common_3.6.100.v20120522-1841.jar")
-sys.path.append(
-	"/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar")
-sys.path.append(
-	"/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.equinox.preferences_3.5.0.v20120522-1841.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.jdt.core_3.8.1.v20120531-0637.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.jdt.ui_3.8.2.v20130107-165834.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.jface.text_3.8.0.v20120531-0600.jar")
-sys.path.append(
-	"/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.ltk.core.refactoring_3.6.100.v20130605-1748.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.osgi_3.8.0.v20120529-1548.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.eclipse.text_3.5.0.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/bson-3.0.2.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/mongodb-driver-3.0.2.jar")
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/mongodb-driver-core-3.0.2.jar")
+sys.path.append("/Libs/jsoup-1.8.2.jar")
+sys.path.append("/Libs/lucene-analyzers-common-4.10.4.jar")
+sys.path.append("/Libs/lucene-core-4.10.4.jar")
+sys.path.append("/Libs/lucene-queries-4.10.4.jar")
+sys.path.append("/Libs/lucene-queryparser-4.10.4.jar")
+sys.path.append("/Libs/jython-standalone-2.7.0.jar")
+sys.path.append("/Libs/mysql-connector-java-5.1.22-bin.jar")
+sys.path.append("/Libs/py4j-0.9.jar")
+sys.path.append("/Libs/org.apache.commons.lang_2.6.0.v201205030909.jar")
+sys.path.append("/Libs/org.eclipse.cdt.core_5.6.0.201402142303.jar")
+sys.path.append("/Libs/org.eclipse.core.contenttype_3.4.200.v20120523-2004.jar")
+sys.path.append("/Libs/org.eclipse.core.jobs_3.5.200.v20120521-2346.jar")
+sys.path.append("/Libs/org.eclipse.core.resources.win32.x86_3.5.100.v20110423-0524.jar")
+sys.path.append("/Libs/org.eclipse.core.resources_3.8.0.v20120522-2034.jar")
+sys.path.append("/Libs/org.eclipse.core.runtime_3.8.0.v20120521-2346.jar")
+sys.path.append("/Libs/org.eclipse.equinox.common_3.6.100.v20120522-1841.jar")
+sys.path.append("/Libs/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar")
+sys.path.append("/Libs/org.eclipse.equinox.preferences_3.5.0.v20120522-1841.jar")
+sys.path.append("/Libs/org.eclipse.jdt.core_3.8.1.v20120531-0637.jar")
+sys.path.append("/Libs/org.eclipse.jdt.ui_3.8.2.v20130107-165834.jar")
+sys.path.append("/Libs/org.eclipse.jface.text_3.8.0.v20120531-0600.jar")
+sys.path.append("/Libs/org.eclipse.ltk.core.refactoring_3.6.100.v20130605-1748.jar")
+sys.path.append("/Libs/org.eclipse.osgi_3.8.0.v20120529-1548.jar")
+sys.path.append("/Libs/org.eclipse.text_3.5.0.jar")
+sys.path.append("/Libs/bson-3.0.2.jar")
+sys.path.append("/Libs/mongodb-driver-3.0.2.jar")
+sys.path.append("/Libs/mongodb-driver-core-3.0.2.jar")
 
 import GitSearch_Result_speed_1
 from operator import attrgetter
@@ -53,7 +46,7 @@ from java.io import File
 
 DBManager.init()
 DBManager.autoconnection()
-INDICES_PATH = '/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Indices/'
+INDICES_PATH = '/Indices/'
 hitlog_path = '/Users/Falcon/Desktop/Tracing/hit_logs_for_each_1.txt'
 scorelog_path = '/Users/Falcon/Desktop/Tracing/Score_logs_1/'
 base_path = '/Users/Falcon/Desktop/IJA/dataset/Experiment/'

@@ -3,7 +3,7 @@
 from urllib import quote, quote_plus
 import urllib2
 import sys
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/jsoup-1.8.2.jar")
+sys.path.append("/Libs/jsoup-1.8.2.jar")
 from org.jsoup import Jsoup
 from flask import Flask, request
 

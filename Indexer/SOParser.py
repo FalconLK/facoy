@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/jsoup-1.8.2.jar")
+sys.path.append("/Libs/jsoup-1.8.2.jar")
 from org.jsoup import Jsoup
 
 def clean_question(html):

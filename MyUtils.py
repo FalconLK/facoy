@@ -72,21 +72,21 @@ def arranging_query_regex(query):
     return arranged_query
 
 def truncate_search_log():
-    file_path = "/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/FrontEnd/static/search_log"
+    file_path = "/FrontEnd/static/search_log"
     file = open(file_path, 'w')
     file.truncate()
     file.close()
 
 def write_search_log(content):
     import codecs
-    file_path = "/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/FrontEnd/static/search_log"
+    file_path = "/FrontEnd/static/search_log"
     with codecs.open(file_path, mode='a', encoding='utf-8') as file:
         #encodedContent = unicode(content, encoding=u'euc-kr').encode(encoding='utf-8')
         file.write(content)  #encodedContent)
     file.close()
 
 def read_search_log():
-    file_path = "/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/FrontEnd/static/search_log"
+    file_path = "/FrontEnd/static/search_log"
     file = open(file_path, 'r')
     content = file.readline()
     file.close()

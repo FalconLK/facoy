@@ -29,7 +29,7 @@ def highlight_file(path):
 # open files and highlight
 # TODO: Return results back to user
 
-INDICES_PATH = "/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Indices/" #"/root/GitSearch/Indices/" #"/Users/Raphael/Downloads/"
+INDICES_PATH = "/Indices/" 
 
 app = Flask(__name__, static_folder='static')
 

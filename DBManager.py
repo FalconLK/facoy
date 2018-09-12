@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 import sys
-sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/mysql-connector-java-5.1.22-bin.jar")
-#sys.path.append("/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Libs/org.apache.commons.lang_2.6.0.v201205030909.jar")
+sys.path.append("/Libs/mysql-connector-java-5.1.22-bin.jar")
 
 from java.lang import Integer
 from java.lang import Class
@@ -33,14 +32,9 @@ class DBManager(object):
 
         Class.forName("com.mysql.jdbc.Driver").newInstance()
         newConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/stackoverflow?", "root", "")
-        # newConn = DriverManager.getConnection("jdbc:mysql://203.255.81.42:3306/stackoverflow?autoReconnect=true", "seal", "sel535424")
         newConn.setAutoCommit(True)
         DBManager.GlobalConn = newConn
 
-        # DBManager.lock.release()
-
-        # print(u'[DBManager] reconnected to DB because of the time out which is %d seconds!' % DBManager.timeout)
-        # threading.Timer(DBManager.timeout, DBManager.autoconnection).start()
         pass
 
     @staticmethod

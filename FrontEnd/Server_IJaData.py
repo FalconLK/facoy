@@ -20,7 +20,7 @@ from GitSearch.Searcher.BigCloneBench_Searcher import find_answer_ids, GettingAn
 from collections import namedtuple
 DBManager.init()
 DBManager.autoconnection()
-INDICES_PATH = '/Users/Falcon/Desktop/Pycharm_Project/FaCoY_Project/GitSearch/Indices/'
+INDICES_PATH = '/Indices/'
 hitlog_path = '/Users/Falcon/Desktop/Tracing/hit_logs_for_each.txt'
 scorelog_path = '/Users/Falcon/Desktop/Tracing/Score_logs/'
 app = Flask(__name__, static_folder='static')
