@@ -266,7 +266,7 @@ def render_code_results(query):
 if __name__ == "__main__":
     while True:
         try:
-            # application.run(host="0.0.0.0", port="5001")
-            application.run(host="0.0.0.0", port=5000)
+             application.run(host="0.0.0.0", port="5001")
+            #application.run(host="0.0.0.0", port=5000)
         except Exception as e:
             print e
