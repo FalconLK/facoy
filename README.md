@@ -10,7 +10,7 @@ FaCoY is a code search engine that receives code fragments from users and retrie
 FaCoY works based on open source java code from a super repository, GitHub and a Q & A posts from a Q & A forum, Stackoverflow. If you want to find code examples which are similar to yours, you can input your code fragment to the system, then you will see the symantically or syntactically similar code examples.
 
 ## Virtual Machine
-https://github.com/FalconLK/FaCoY/tree/release-1.0/facoy
+https://github.com/FalconLK/facoy/tree/release-1.0/VM
 
 ## Finding/Evaluation
 ### RQ1
