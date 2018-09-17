@@ -1,3 +1,0 @@
-private double calc(double right){
-		return func(ux,uy,right) - func(lx,ly,right);
-	}

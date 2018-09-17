@@ -1,6 +1,0 @@
-private void solve() throws Throwable {
-		int t = iread();
-		for (int i = 0; i < t; i++) {
-			solveIt(i+1);
-		}
-	}

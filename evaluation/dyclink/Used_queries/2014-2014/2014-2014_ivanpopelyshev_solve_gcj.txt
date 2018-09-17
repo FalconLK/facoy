@@ -1,8 +1,0 @@
-public void solve_gcj() throws Exception {
-		int tests = iread();
-		for (int test = 1; test <= tests; test++) {
-			out.write("Case #" + test + ": ");
-			solve();
-			out.write("\n");
-		}
-	}

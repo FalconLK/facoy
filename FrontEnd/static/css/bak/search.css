@@ -1,0 +1,189 @@
+input:focus{
+	outline: 0
+}
+
+body{
+    /*height: 100%;*/
+	margin:0px;
+	text-align: center;
+}
+
+#top {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 15px;
+	width: 100%;
+	height: 45px;
+	display: block;
+	background-color:#f1f1f1;
+}
+
+#top input.textbox{
+    margin-top:5px;
+    border: 1px solid #dcdcdc;
+	padding:10px;
+	width: 50%;
+	height:22px;
+    color:#858c91;
+	font-size: 25px;
+}
+#top input.textbox:hover{
+    margin-top:5px;
+    padding:10px;
+	width: 50%;
+	height:22px;
+	color:#858c91;
+	font-size: 25px;
+	/*box-shadow: 0.3px 0.3px 0px 0px #ccc;
+    box-shadow: 1px 2px 2px 0px #ccc;*/
+    box-shadow: 0 0 10px #b4b4b4;
+    border: 1px solid #dcdcdc;
+}
+#top input.button{
+    margin-top:5px;
+	width:21px;
+	height:22px;
+	margin-left:10px;
+}
+div.search_results{
+    width:100%;
+    height:22px;
+    text-align:left;
+    padding-left:13%;
+    padding-top:1px;
+    font-size:13px;
+    color:#828282;
+}
+/***
+Sidebar Area
+*/
+
+
+#sidebar
+{	
+	position:fixed;
+	top:0px;
+	right:40px;
+	width:600px;
+	height:100%;*/
+	/*margin:120px 0px 40px;
+	width:300px;
+	min-height:100px;*/
+	display:flex;
+	flex-direction:column;
+	display: -moz-box;
+	display: -webkit-flexbox;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: -moz-flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+}
+#sidebar .title
+{
+	margin:120px 0px 0px;
+	padding:5px 0px;
+	font-weight: 400;
+	font-size: 15px;
+	color: white;
+	border: none;
+	background-color: #3f4b55;
+}
+#sidebar pre{
+	margin:0px 0px 20px;
+	padding:10px;
+	background: #e5e5e5;
+	flex:1;
+	overflow-y:overlay;
+	overflow-wrap:break-word;
+	text-align:left;
+	font-size:11pt;
+}
+
+
+/***
+The result items
+**/
+
+#code_container{
+	margin-top:120px;
+	/*margin-left:640px;*/ /*640 이었던 부분을 0으로 바꾸고, search.html에서 sidebar 부분을 주석처리 해버리면 pdf로 뜰수있음.*/
+	/*현재 css 파일 수정해도 쿠키, 삭제 안하면 계속 안바뀌고 남아있음.*/
+	margin-left:10%;
+	margin-right:30%;
+	padding:0px;
+	font-size: 15px;
+	padding-bottom: 100px;
+}
+
+/**
+Query 에 대한 영역.
+**/
+a:-webkit-any-link{
+	text-decoration:none !important;
+	color:black;
+}
+#query{
+	margin:0px 40px;
+	margin-bottom:10px;
+	font-size: 15px;
+	background-color: #e5e5e5;
+}
+
+#query > div.title{
+    margin:0;
+	padding:5px 0px;
+	font-weight: 400;
+	font-size: 15px;
+	color: white;
+	border: none;
+	background-color: #3f4b55;
+}
+
+#query > div.simple{
+	padding:10px;
+	display: block;
+/*	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;*/
+}
+
+#query > div.detail{
+	display:none;
+}
+
+#query:hover > div.detail{
+	text-align: start;
+	display: block;
+	padding:10px;
+	white-space:wrap;
+}
+
+#query:hover > div.simple{
+	display: none;
+}
+
+/*
+Snippet_items.
+*/
+div.snippet_item{
+	margin:20px 40px;
+	text-align: left;
+}
+
+div.snippet_metadata
+{	
+	text-decoration:none !important;
+	color:black;
+	padding: 15px;
+	background-color: khaki;
+	font-family: Verdana
+}
+div.snippet_code{
+	text-decoration:none !important;
+	max-height: 400px;
+	overflow: auto
+}
+
