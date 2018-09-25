@@ -2,6 +2,7 @@
 
 # FaCoY
 This repository shares data and code used for the FaCoY project.
+http://code-search.uni.lu/facoy
 
 ## What it is?
 FaCoY is a code search engine that receives code fragments from users and retrieve the related code examples. While other code search engines directly match user free-form queries and source code, FaCoY translates and augments user queries into code-friendly queries. Further more, it considers semantic similarity for code examples.
