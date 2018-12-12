@@ -34,7 +34,7 @@ https://github.com/FalconLK/FaCoY/tree/release-1.0/evaluation/defects4J
 ## Citation
 ```
 @inproceedings{kim2018facoy,
-  title={FaCoY--A Code-to-Code Search Engine},
+  title={FaCoY-A Code-to-Code Search Engine},
   author={Kim, Kisub and Kim, Dongsun and Bissyande, Tegawende F and Choi, Eunjong and Li, Li and Klein, Jacques and Le Traon, Yves},
   booktitle={Proceedings of the 40th International Conference on Software Engineering (ICSE)},
   year={2018}
