@@ -1,4 +1,4 @@
-![facoy_logo](https://user-images.githubusercontent.com/26062775/29922353-86fa005c-8e55-11e7-88ef-42a735cf42c4.png)
+![facoy_logo](https://github.com/FalconLK/facoy/blob/release-1.0/Logos/10.png)
 
 # FaCoY
 This repository shares data and code used for the FaCoY project.
