@@ -1,0 +1,21 @@
+public static long getStartIsMax(long[] a, long[] b) {
+		long result = 0;
+		for (int i = 0; i < a.length - 2; i++) {
+			long meSum = a[i];
+			int l = i + 1;
+			int h = a.length - 2;
+			while (h > l) {
+				int mid = l + h >> 1;
+				if (a[mid] - meSum <= meSum)
+					l = mid + 1;
+				else
+					h = mid;
+			}
+			if (a[h] - meSum > meSum)
+				h--;
+			if (h > i && b[h + 1] <= meSum)
+				result = Math.max(result, b[h + 1] + a[h] - meSum);
+		}
+		// System.out.println("START " + result);
+		return result;
+	}

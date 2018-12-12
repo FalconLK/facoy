@@ -1,0 +1,4 @@
+public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		new Solution("data").run();
+	}

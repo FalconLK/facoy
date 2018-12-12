@@ -1,0 +1,33 @@
+String solve() {
+		long[] a = new long[n];
+		long[] c = new long[n + 1];
+		long sum = 0;
+		for (int i = 0; i < n; i++) {
+			a[i] = (i * p + q) % r + s;
+			sum += a[i];
+			c[i + 1] = sum;
+		}
+		long low = 0;
+		long high = sum;
+		while (low + 1 < high) {
+			long m = (low + high) / 2;
+			int i = 0;
+			long x = 0;
+			while (i < n && x + a[i] <= m) {
+				x += a[i];
+				i++;
+			}
+			int j = n - 1;
+			long y = 0;
+			while (j >= 0 && y + a[j] <= m) {
+				y += a[j];
+				j--;
+			}
+			if (sum - x - y <= m) {
+				high = m;
+			} else {
+				low = m;
+			}
+		}
+		return "" + (sum - high) * 1.0 / sum;
+	}

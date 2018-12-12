@@ -1,0 +1,29 @@
+double getsq(double x) {
+		
+		double area = 0;
+		int t1 = -1;
+		int t2 = -1;
+		for (int i = 0; i + 1 < up.length; i++) {
+			if (up[i + 1].x >= x) {
+				t1 = i;
+				break;
+			}
+			area += (up[i].y + up[i + 1].y) * (up[i + 1].x - up[i].x) / 2;
+		}
+		
+		for (int i = 0; i  + 1< low.length; i++) {
+			if (low[i + 1].x >= x) {
+				t2 = i;
+				break;
+			}
+			area -= (low[i].y + low[i + 1].y) * (low[i + 1].x - low[i].x) / 2;
+		}
+		
+		double y1 = get(up[t1], up[t1 + 1], x);
+
+		double y2 = get(low[t2], low[t2 + 1], x);
+		
+		area += (y1 + up[t1].y) * (x - up[t1].x) / 2;
+		area -= (y2 + low[t2].y) * (x - low[t2].x) / 2;
+		return area;
+	}

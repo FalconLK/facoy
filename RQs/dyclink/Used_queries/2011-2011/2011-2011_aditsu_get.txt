@@ -1,0 +1,14 @@
+private static double get(P[] lb, P[] ub, double a) {
+		double x1 = 0;
+		double x2 = lb[lb.length - 1].x;
+		while (x2 - x1 > 1e-7) {
+			double m = (x1 + x2) / 2;
+			if (getArea(ub, m) - getArea(lb, m) > a) {
+				x2 = m;
+			}
+			else {
+				x1 = m;
+			}
+		}
+		return (x1 + x2) / 2;
+	}

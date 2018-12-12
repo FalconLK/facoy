@@ -1,0 +1,18 @@
+Output solve() {
+			long sum = 0;
+			for (int val : a) {
+				sum += val;
+			}
+			long left = -1, right = sum + 1;
+			while (right - left > 1) {
+				long mid = (left + right) >>> 1;
+				if (can(a, mid)) {
+					right = mid;
+				} else {
+					left = mid;
+				}
+			}
+
+			double prob = 1.0 - (double) right / (double) sum;
+			return new Output(prob);
+		}

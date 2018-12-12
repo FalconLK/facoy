@@ -1,0 +1,25 @@
+private void solve(Kattio io) {
+        int N = io.getInt(), p = io.getInt(), q = io.getInt(), r = io.getInt(), s = io.getInt();
+        a = new long[N];
+        sum = new long[N + 1];
+        for (int i = 0; i < N; i++) {
+            a[i] = (((i * (long) p) + q) % r + s);
+            sum[i+1] = sum[i] + a[i];
+        }
+        best = 0.0;
+        for (int i = 0; i < N; i++) {
+            long right = sum[N] - sum[i+1];
+
+            int lo = 0, hi = N;
+            while (lo < hi) {
+                int j = (lo+hi)/2;
+                if (sum[j] < right) lo = j + 1; else hi = j;
+            }
+            check(lo-2, i);
+            check(lo-1, i);
+            check(lo, i);
+            check(lo+1, i);
+            check(lo+2, i);
+        }
+        io.println(best);
+    }

@@ -1,0 +1,65 @@
+public void solve() throws IOException {
+        int testNo = in.nextInt();
+        for (int test = 1; test <= testNo; test++) {
+            System.out.println("Test " + test);
+
+            b = in.nextLong();
+            int n = in.nextInt();
+            a = new long[37];
+            long sumb = 0;
+            for (int i = 0; i < n; i++) {
+                a[i] = in.nextLong();
+                sumb += a[i];
+            }
+            Arrays.sort(a);
+
+            double ans = 0;
+            for (int i = 0; i <= 37; i++) {
+                long L = i == 0 ? 0 : a[i - 1];
+                long R = b + sumb + 1;
+                if (L >= R || eval(i, L) > b) {
+                    continue;
+                }
+
+                while (L < R - 1) {
+                    long m = (L + R) / 2;
+                    long need = eval(i, m);
+                    if (need > b) {
+                        R = m;
+                    } else {
+                        L = m;
+                    }
+                }
+
+                long[] put = new long[37];
+                long total = 0;
+                for (int j = 0; j < 37; j++) {
+                    if (j < i) {
+                        if (a[j] <= L) {
+                            put[j] = L - a[j];
+                        } else {
+                            throw new AssertionError();
+                        }
+                    } else {
+                        if (a[j] < L + 1) {
+                            put[j] = L + 1 - a[j];
+                        }
+                    }
+                    total += put[j];
+                }
+
+                double win = 0;
+                for (int j = 0; j < i; j++) {
+                    win += 1.0 / i * put[j] * 36.0;
+                }
+                win -= total;
+                if (win > ans) {
+                    ans = win;
+                }
+            }
+
+            out("Case #%d: ", test);
+            out("%.15f", ans);
+            out("\n");
+        }
+    }

@@ -1,0 +1,16 @@
+public static void main(String[] args) throws FileNotFoundException {
+        Scanner input = new Scanner(new File("input.txt"));
+        PrintWriter output = new PrintWriter(new File("output.txt"));
+
+        A sol = new A();
+
+        int t = input.nextInt();
+        for (int i = 0; i < t; i++) {
+            output.print("Case #" + (i + 1) + ": ");
+            sol.run(input, output);
+        }
+
+        input.close();
+        output.close();
+    }
+}

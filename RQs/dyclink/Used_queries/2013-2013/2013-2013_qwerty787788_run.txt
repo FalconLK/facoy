@@ -1,0 +1,17 @@
+void run() throws IOException {
+        try {
+            in = new FastScanner(new File("A.in"));
+            out = new PrintWriter(new File("A.out"));
+
+            int testNumber = in.nextInt();
+            for (int test = 1; test <= testNumber; test++) {
+                out.print("Case #" + (test) + ": ");
+                solve();
+                System.out.println(test);
+            }
+
+            out.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }

@@ -1,0 +1,1 @@
+return new File(MyClass.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath());

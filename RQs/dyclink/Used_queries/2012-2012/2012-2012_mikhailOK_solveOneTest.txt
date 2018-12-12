@@ -1,0 +1,33 @@
+private static void solveOneTest() throws IOException {
+		int n = nextInt();
+		int[] time = new int[n];
+		for (int i = 0; i < n; i++) {
+			time[i] = nextInt();
+		}
+		int[] prob = new int[n];
+		for (int i = 0; i < n; i++) {
+			prob[i] = nextInt();
+		}
+		Level[] levels = new Level[n];
+		for (int i = 0; i < n; i++) {
+			levels[i] = new Level(time[i], prob[i], i);
+		}
+		// boolean zero = false;
+		// for (int i = 0; i < n; i++) {
+		// if (prob[i] == 100) {
+		// zero = true;
+		// }
+		// }
+		// if (zero) {
+		// for (int i = 0; i < n; i++) {
+		// out.print(" " + i);
+		// }
+		// out.println();
+		// return;
+		// }
+		sort(levels);
+		for (Level l : levels) {
+			out.print(" " + l.id);
+		}
+		out.println();
+	}

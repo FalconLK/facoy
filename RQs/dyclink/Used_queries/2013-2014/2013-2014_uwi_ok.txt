@@ -1,0 +1,11 @@
+boolean ok(long h)
+	{
+		long s = 0;
+		int i = 0;
+		for(;i < n && s+a[i] <= h;s += a[i],i++);
+		s = 0;
+		for(;i < n && s+a[i] <= h;s += a[i],i++);
+		s = 0;
+		for(;i < n && s+a[i] <= h;s += a[i],i++);
+		return i == n;
+	}

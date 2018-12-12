@@ -1,0 +1,17 @@
+public void run() {
+		try {
+			String fileName = "A-" + (large ? "large" : "small");
+			br = new BufferedReader(new FileReader(fileName + ".in"));
+			out = new PrintWriter(fileName + ".out");
+			st = new StringTokenizer("");
+			int T = nextInt();
+			for (int i = 1; i <= T; i++) {
+				out.print("Case #" + i + ": ");
+				solve();
+			}
+			out.close();
+		} catch (Throwable e) {
+			e.printStackTrace();
+			System.exit(239);
+		}
+	}

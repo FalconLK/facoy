@@ -1,0 +1,15 @@
+void run() {
+		try {
+			in = new BufferedReader(new FileReader("input.txt"));
+			out = new PrintWriter("output.txt");
+			int tests = nextInt();
+			for (int i = 0; i < tests; i++) {
+				out.println("Case #" + (i + 1) + ": ");
+				solve();
+			}
+			out.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.exit(1);
+		}
+	}

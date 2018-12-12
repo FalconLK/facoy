@@ -1,0 +1,24 @@
+double area(Point[] p, double bnd) {
+		double res = 0.0;
+		
+		for (int i=0; i + 1 < p.length; i++) {
+			if (p[i].x >= bnd)
+				continue;
+			
+			double x1 = p[i].x;
+			double y1 = p[i].y;
+			double x2 = p[i+1].x;
+			double y2 = p[i+1].y;
+			
+			if (x2 > bnd) {
+				double cf = (bnd - p[i].x) / (double)(p[i+1].x - p[i].x);
+				x2 = bnd;
+				y2 = p[i].y + (p[i+1].y - p[i].y) * cf;
+			}
+			
+			res += (x2 - x1) * (y1 + y2) / 2.0;
+		}
+		
+		return res;
+	}
+	

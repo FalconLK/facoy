@@ -1,0 +1,34 @@
+public double area(double slice) {
+            double ans = 0;
+            //lower
+            {
+                int l = 0, r = lx.length - 1;
+                while (r - l > 1) {
+                    int m = (l + r) >>> 1;
+                    if (lx[m] <= slice) {
+                        l = m;
+                    } else {
+                        r = m;
+                    }
+                }
+                double y = (ly[r] - ly[l]) * (slice - lx[l]) / (lx[r] - lx[l]) + ly[l];
+                ans -= pl[l];
+                ans -= (ly[l] + y) / 2.0 * (slice - lx[l]);
+            }
+            //lower
+            {
+                int l = 0, r = ux.length - 1;
+                while (r - l > 1) {
+                    int m = (l + r) >>> 1;
+                    if (ux[m] <= slice) {
+                        l = m;
+                    } else {
+                        r = m;
+                    }
+                }
+                double y = (uy[r] - uy[l]) * (slice - ux[l]) / (ux[r] - ux[l]) + uy[l];
+                ans += pu[l];
+                ans += (uy[l] + y) / 2.0 * (slice - ux[l]);
+            }
+            return ans;
+        }

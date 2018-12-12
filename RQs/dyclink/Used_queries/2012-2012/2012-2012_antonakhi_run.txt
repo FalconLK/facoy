@@ -1,0 +1,12 @@
+private void run() {
+		Locale.setDefault(Locale.US);
+		try {
+			br = new BufferedReader(new FileReader(FNAME + ".in"));
+			out = new PrintWriter(FNAME + ".out");
+			solve();
+			out.close();
+		} catch (Throwable e) {
+			e.printStackTrace();
+			System.exit(566);
+		}
+	}

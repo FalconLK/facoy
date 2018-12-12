@@ -1,0 +1,13 @@
+double getProfit(long[] a, int to, long value) {
+        long res = 0;
+        for (int i = 0; i < to; i++) {
+            res += value - a[i];
+        }
+        double ss = res * 1.0 / to * 36;
+        for (int i = to; i < 37; i++)
+            if (a[i] <= value) {
+                res += value + 1 - a[i];
+            }
+        ss -= res;
+        return ss;
+    }

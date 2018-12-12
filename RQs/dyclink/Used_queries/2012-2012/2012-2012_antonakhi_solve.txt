@@ -1,0 +1,20 @@
+private void solve() throws IOException {
+		int tests = nextInt();
+		for (int test = 1; test <= tests; test++) {
+			out.print("Case #" + test + ":");
+			int n = nextInt();
+			int[] len = new int[n];
+			for (int i = 0; i < len.length; i++) {
+				len[i] = nextInt();
+			}
+			Item[] a = new Item[n];
+			for (int i = 0; i < a.length; i++) {
+				a[i] = new Item(i, len[i], nextInt());
+			}
+			Arrays.sort(a);
+			for (int i = 0; i < a.length; i++) {
+				out.print(" " + a[i].num);
+			}
+			out.println();
+		}
+	}

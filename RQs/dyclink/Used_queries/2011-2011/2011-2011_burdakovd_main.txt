@@ -1,0 +1,26 @@
+public static void main(final String[] args) throws IOException {
+
+		final long startTime = System.nanoTime();
+		final int t = nextInt();
+
+		for (int i = 0; i < t; ++i) {
+			solve(i + 1);
+			if (isLocal && file) {
+				err.println(i + 1 + "/" + t);
+			}
+			if (isLocal && !file) {
+				out.flush();
+			}
+		}
+
+		if (isLocal) {
+			err.println(String.format("Completed after %d ms.",
+					(System.nanoTime() - startTime) / 1000000));
+		}
+
+		out.flush();
+		if (file) {
+			out.close();
+		}
+
+	}

@@ -1,0 +1,27 @@
+void solve(PrintWriter out) {
+            Arrays.sort(x);
+            double ans = 0.;
+            long last = 0, sum = 0;
+            for (int i = 0; i < n; ++i) {
+                sum += (x[i] - last) * i;
+                last = x[i];
+                if (sum > b) {
+                    break;
+                }
+                if (i + 1 == n || x[i + 1] != x[i]) {
+                    long next = i + 1 == n ? INF : x[i + 1];
+                    int count = i + 1;
+                    for (int c = 0; c < count && c + sum <= b; ++c) {
+                        long bet = Math.min((b - c - sum) / count, next - x[i] - 1);
+                        long bets = 0;
+                        for (int j = 0; j < count - c; ++j) {
+                            bets += last + bet - x[j];
+                        }
+                        double val = bets * 36.0 / (count - c) - bet * count - c - sum;
+//                        System.err.println(count + " " + sum + " " + c + " " + bet + " " + bets + " " + val);
+                        ans = Math.max(ans, val);
+                    }
+                }
+            }
+            out.println(ans);
+		}

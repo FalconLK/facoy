@@ -1,0 +1,5 @@
+java.lang.reflect.Method method;
+try {
+  method = obj.getClass().getMethod(methodName, param1.class, param2.class, ..);
+} catch (SecurityException e) { ... }
+  catch (NoSuchMethodException e) { ... }

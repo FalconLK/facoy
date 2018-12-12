@@ -1,0 +1,17 @@
+public void run() {
+		try {
+			in = new BufferedReader(new FileReader(file + ".in"));
+			out = new PrintWriter(file + ".out");
+			eat("");
+			
+			int tests = nextInt();
+			for (int test = 0; test < tests; ++test) {
+				solve(test);
+			}
+			
+			out.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+			failed = true;
+		}
+	}

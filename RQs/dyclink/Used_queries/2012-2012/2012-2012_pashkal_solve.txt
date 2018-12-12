@@ -1,0 +1,15 @@
+public void solve() throws IOException {
+		int n = nextInt();
+		Job[] a = new Job[n];
+		for (int i = 0; i < n; i++) {
+			a[i] = new Job(nextInt(), i);
+		}
+		for (int i = 0; i < n; i++) {
+			a[i].p = nextInt();
+		}
+		Arrays.sort(a);
+		for (int i = 0;i < n;i++) {
+			out.print(a[i].num + " ");
+		}
+		out.println();
+	}

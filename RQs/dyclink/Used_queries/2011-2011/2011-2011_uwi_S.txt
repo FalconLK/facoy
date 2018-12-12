@@ -1,0 +1,21 @@
+static double S(double x)
+	{
+		double ret = 0;
+		{
+			int indl = Arrays.binarySearch(lx, x);
+			if(indl < 0)indl = -indl-2;
+			ret -= ls[indl];
+			double yl = ly[indl]+(ly[indl+1]-ly[indl])*(x-lx[indl])/(lx[indl+1]-lx[indl]);
+			ret -= (x - lx[indl]) * (ly[indl] + yl) / 2;
+		}
+		
+		{
+			int indu = Arrays.binarySearch(ux, x);
+			if(indu < 0)indu = -indu-2;
+			ret += us[indu];
+			double yu = uy[indu]+(uy[indu+1]-uy[indu])*(x-ux[indu])/(ux[indu+1]-ux[indu]);
+			ret += (x - ux[indu]) * (uy[indu] + yu) / 2;
+		}
+		
+		return ret;
+	}

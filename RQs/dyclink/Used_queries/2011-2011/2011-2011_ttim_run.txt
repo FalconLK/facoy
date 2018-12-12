@@ -1,0 +1,44 @@
+ public void run(Scanner input, PrintWriter output) {
+        int w = input.nextInt();
+        int l = input.nextInt();
+        int u = input.nextInt();
+        int g = input.nextInt();
+
+        int[] lx = new int[l];
+        int[] ly = new int[l];
+
+        for (int i = 0; i < l; i++) {
+            lx[i] = input.nextInt();
+            ly[i] = input.nextInt();
+        }
+
+        int[] ux = new int[u];
+        int[] uy = new int[u];
+
+        for (int i = 0; i < u; i++) {
+            ux[i] = input.nextInt();
+            uy[i] = input.nextInt();
+        }
+
+        output.println();
+        double cx = 0;
+
+        double s = calc(0, w, lx, ly, ux, uy) / g;
+
+        for (int i = 0; i < g - 1; i++) {
+            double _l = cx;
+            double _r = w;
+
+            while (Math.abs(_r - _l) > EPS) {
+                double m = (_l + _r) / 2;
+                if (calc(cx, m, lx, ly, ux, uy) < s) {
+                    _l = m;
+                } else {
+                    _r = m;
+                }
+            }
+
+            output.println(_l);
+            cx = _l;
+        }
+    }

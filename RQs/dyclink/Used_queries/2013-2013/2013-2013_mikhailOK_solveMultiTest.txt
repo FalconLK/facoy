@@ -1,0 +1,7 @@
+static void solveMultiTest() throws IOException {
+		int testCases = nextInt();
+		for (int testCase = 1; testCase <= testCases; testCase++) {
+			out.print("Case #" + testCase + ": ");
+			solveOneTest();
+		}
+	}

@@ -1,0 +1,38 @@
+static double povrsinaDo(double x) {
+		int ui = 0;
+		while (u[ui].x < x)
+			ui++;
+		Tacka au = new Tacka();
+		au.x = x;
+		au.y = u[ui - 1].y + ((x - u[ui - 1].x) / (u[ui].x - u[ui - 1].x))
+				* (u[ui].y - u[ui - 1].y);
+		int li = 0;
+		while (l[li].x < x)
+			li++;
+		Tacka al = new Tacka();
+		al.x = x;
+		al.y = l[li - 1].y + ((x - l[li - 1].x) / (l[li].x - l[li - 1].x))
+				* (l[li].y - l[li - 1].y);
+
+		double ret = 0;
+
+		for (int i = 0; i < li - 1; i++)
+			ret += l[i].x * l[i + 1].y;
+		ret += l[li - 1].x * al.y;
+		ret += al.x * au.y;
+		ret += au.x * u[ui - 1].y;
+		for (int i = ui - 1; i > 0; i--)
+			ret += u[i].x * u[i - 1].y;
+		ret += u[0].x * l[0].y;
+
+		for (int i = 0; i < li - 1; i++)
+			ret -= l[i].y * l[i + 1].x;
+		ret -= l[li - 1].y * al.x;
+		ret -= al.y * au.x;
+		ret -= au.y * u[ui - 1].x;
+		for (int i = ui - 1; i > 0; i--)
+			ret -= u[i].y * u[i - 1].x;
+		ret -= u[0].y * l[0].x;
+
+		return ret;
+	}

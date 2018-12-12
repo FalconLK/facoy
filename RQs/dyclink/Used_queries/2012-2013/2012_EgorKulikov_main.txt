@@ -1,0 +1,21 @@
+public static void main(String[] args) {
+		InputStream inputStream;
+		try {
+			inputStream = new FileInputStream("input.txt");
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
+		OutputStream outputStream;
+		try {
+			outputStream = new FileOutputStream("output.txt");
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
+		InputReader in = new InputReader(inputStream);
+		OutputWriter out = new OutputWriter(outputStream);
+		TaskA solver = new TaskA();
+		int testCount = Integer.parseInt(in.next());
+		for (int i = 1; i <= testCount; i++)
+			solver.solve(i, in, out);
+		out.close();
+	}
