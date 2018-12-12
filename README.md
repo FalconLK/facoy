@@ -15,16 +15,16 @@ https://github.com/FalconLK/facoy/tree/release-1.0/VM
 
 ## Finding/Evaluation
 ### RQ1
-https://github.com/FalconLK/FaCoY/tree/release-1.0/evaluation/onlinequery
+https://github.com/FalconLK/FaCoY/tree/release-1.0/RQs/onlinequery
 
 ### RQ2
-https://github.com/FalconLK/FaCoY/tree/release-1.0/evaluation/bigclone
+https://github.com/FalconLK/FaCoY/tree/release-1.0/RQs/bigclone
 
 ### RQ3
-https://github.com/FalconLK/FaCoY/tree/release-1.0/evaluation/dyclink
+https://github.com/FalconLK/FaCoY/tree/release-1.0/RQs/dyclink
 
 ### RQ4
-https://github.com/FalconLK/FaCoY/tree/release-1.0/evaluation/defects4J
+https://github.com/FalconLK/FaCoY/tree/release-1.0/RQs/defects4J
 
 ## Maintance
 @FalconLK Kisub Kim
