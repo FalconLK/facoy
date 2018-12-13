@@ -45,7 +45,7 @@ Therefore, we manually verify the clone pairs that are not associated in BigClon
 
 ***FaCoY performs better for functionalities requiring external APIs and libraries than those with pure computation tasks. In addition, our approach’s even can detect clones that BigCloneBench missed with a high probability.**
 
-False positive samples are listed and available [here](/evaluation/bigclone/false_positive_samples)
+False positive samples are listed and available [here](/RQs/bigclone/false_positive_samples)
 
 
 
