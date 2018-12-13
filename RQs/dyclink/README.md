@@ -11,9 +11,9 @@ We consider all methods for which DyCLINK finds a relative and use FaCoY to sear
 
 As a result, FaCoY can identify 278 out of 411 code relatives and the hit ratio is 68%. On the other hand, MRR is 0.18, which means FaCoY recommends the code relatives into lower rankings.
 
-- The used Google Code Jam data is available [here](/evaluation/dyclink/GoogleCodeJam_data) 
+- The used Google Code Jam data is available [here](/RQs/dyclink/GoogleCodeJam_data) 
 - The basic name mapping information is available [here](https://drive.google.com/open?id=0B2btZBiPsouGNmx6Y2xCVXUwbUk) 
-- The used queries are also available [here](/evaluation/dyclink/Used_queries).
+- The used queries are also available [here](/RQs/dyclink/Used_queries).
 - The result can be checked in [here](https://drive.google.com/open?id=0B2btZBiPsouGT2o3eVU2c2txdmM).
 
 Since most codes in Google Code Jam often use variables with no meaning (such as void s(int a){}), FaCoY cannot find related code in StackOverflow and thus cannot build alternate queries, limiting the hit ratio. On the other hand, since DyCLINK also uses a similarity metric to decide on code relativeness, the MRR score of FaCoY could be higher with a more relaxed threashold (currently set at 82%) in DyCLINK.
