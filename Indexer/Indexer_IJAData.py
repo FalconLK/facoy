@@ -155,18 +155,13 @@ def main():
 	try:
 		print "Indexing starts..."
 		indicesDestination = File("/Users/Falcon/Desktop/New_Indices/IJA_Indices")
-		#writer = IndexWriter(SimpleFSDirectory(indexDestination), StandardAnalyzer(), True, IndexWriter.MaxFieldLength.UNLIMITED)
-		#Analyzer : 본문이나 제목 등의 텍스트를 색인하기 전에 반드시 분석기를 거쳐 단어로 분리해야 한다. Analyzer 클래스는 Directory와 함께 IndexWrite 클래스의 생성 메소드에 지정하며 지정된 텍슽트를 색인할 단위 단어로 분리하고 필요 없는 단어를 제거하는 등의 역할을 담당
 
-		analyzer = KeywordAnalyzer()  #전체 텍스트를 하나의 토큰으로 다룬다. (즉, Analyze 하지 않는 것과 결과적으로 동일하다.)
-		a = {"code": JavaCodeAnalyzer(), "comments": EnglishAnalyzer(Version.LUCENE_CURRENT)} #PerFieldAnalyzerWrapper를 사용하기 위한 map 생성 (Python 에서는 Dict())
-		wrapper_analyzer = PerFieldAnalyzerWrapper(analyzer, a) 				#http://svn.apache.org/viewvc/lucene/pylucene/trunk/test/test_PerFieldAnalyzerWrapper.py?revision=1757704&view=co
+		analyzer = KeywordAnalyzer()  
+		a = {"code": JavaCodeAnalyzer(), "comments": EnglishAnalyzer(Version.LUCENE_CURRENT)}
+		wrapper_analyzer = PerFieldAnalyzerWrapper(analyzer, a) 				
 		config = IndexWriterConfig(Version.LUCENE_CURRENT, wrapper_analyzer)
 
 		writer = IndexWriter(SimpleFSDirectory(indicesDestination), config)
-		#SimpleFSDirectory 옵션은 파일시스템에 특정 디렉토리에 인덱스 파일을 저장하겠다. DB, RAM, File system 3개가 있음
-		#config 는 IndexWriter 사용에 필요한 Analyzed 된 token이다.
-
 		counter = Counter()
 		generate_indices_from_projects(writer, counter)
 		writer.close()
