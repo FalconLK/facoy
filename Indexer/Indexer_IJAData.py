@@ -59,16 +59,16 @@ def java_files_from_dir(directory):
 
 def generate_indices_from_projects(writer, counter):
 	HOME = "/Users/Falcon/Desktop/IJA/dataset/"
-	javafiles = java_files_from_dir(HOME)	#자바 파일들만 뽑아내는 함수
+	javafiles = java_files_from_dir(HOME)	
 	i = 0
 	j = 0
 	for javafile in javafiles:
 		#print javafile
 		i += 1
-		if i % 1000 == 0:	#1000개 될때마다 프린트 한번씩
+		if i % 1000 == 0:	
 			print("Counter: %s" % i)
 			print "typed_method_call" + str(counter.typed_method_call_count)
-		document = Document()	#루씬 Document 객체
+		document = Document()	
 
 		################################################################################################################
 		splits = javafile.split("/")[6:]
@@ -79,12 +79,11 @@ def generate_indices_from_projects(writer, counter):
 		changed_path = "/Users/Falcon/Desktop/IJA/dataset" + project_path
 		document.add(Field("file", changed_path, Field.Store.YES, Field.Index.NO))
 		################################################################################################################
-		# document.add(Field("file", javafile, Field.Store.YES, Field.Index.NO))
 		try:
 			with codecs.open(javafile, "r", encoding='utf-8', errors='ignore') as f:
 				file_content = f.read().encode("utf-8", errors='ignore')
 
-			ast = parse(file_content, resolve=False)	#newJavaParser를 사용하여 자바 코드 파싱
+			ast = parse(file_content, resolve=False)
 			if add_code_keyword_into_document(document, file_content, ast, counter):
 				writer.addDocument(document)
 				j += 1
